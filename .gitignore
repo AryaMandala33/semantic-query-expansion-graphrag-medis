@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+data/cache/
+data/kg.csv
+data/kg_subset.csv
+reports/

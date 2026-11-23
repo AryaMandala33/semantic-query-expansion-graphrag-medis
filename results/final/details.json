@@ -1,0 +1,2893 @@
+[
+  {
+    "query_id": "A01",
+    "type": "acronym",
+    "seen_in_development": true,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "multiple sclerosis",
+    "base_interpretasi": "Amiodarone",
+    "latency_utama_s": 0.01,
+    "latency_base_s": 0.24,
+    "llm_cached": 1,
+    "query": "Which drugs are used for MS in a young woman with optic neuritis and relapsing episodes of limb numbness?",
+    "gold": [
+      "multiple sclerosis"
+    ],
+    "candidates": [
+      {
+        "name": "multiple sclerosis",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The context of optic neuritis and limb numbness strongly suggests multiple sclerosis."
+      },
+      {
+        "name": "mitral stenosis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While a possible meaning, it does not fit the neurological symptoms described."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "mitral stenosis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While a possible meaning, it does not fit the neurological symptoms described.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "multiple sclerosis",
+        "node": "multiple sclerosis",
+        "label": "Disease",
+        "similarity": 0.6611,
+        "subgraph_text": "multiple sclerosis (disease), indication: Teriflunomide, Dalfampridine, Natalizumab, Ozanimod, Hydrocortisone acetate, Cortisone acetate, Methylprednisolone, Prednisone; contraindication: Zinc gluconate, Ascorbic acid; associated with: CD6, CLDN11, TNFSF14, IL7, KCNJ10, PDCD1, MCAM, CD58"
+      }
+    ],
+    "utama_top5": "Methylprednisolone [Drug] | Natalizumab [Drug] | Prednisolone [Drug] | Dexamethasone [Drug] | Ozanimod [Drug]",
+    "base_keywords": [
+      "drugs",
+      "used",
+      "ms",
+      "young",
+      "woman",
+      "optic",
+      "neuritis",
+      "relapsing",
+      "episodes",
+      "limb",
+      "numbness"
+    ],
+    "base_matched": [
+      "Optic neuritis",
+      "optic neuritis",
+      "Retrobulbar optic neuritis",
+      "MS",
+      "Neuritis"
+    ],
+    "base_top5": "Amiodarone [Drug] | Nitrofural [Drug] | Diiodohydroxyquinoline [Drug] | Nitrofurantoin [Drug] | Corticotropin [Drug]"
+  },
+  {
+    "query_id": "A02",
+    "type": "acronym",
+    "seen_in_development": true,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "multiple sclerosis",
+    "base_interpretasi": "Arrhythmia",
+    "latency_utama_s": 0.01,
+    "latency_base_s": 0.27,
+    "llm_cached": 1,
+    "query": "MS in a patient with a history of rheumatic fever who has a low-pitched diastolic rumble at the apex and an opening snap.",
+    "gold": [
+      "Mitral stenosis"
+    ],
+    "candidates": [
+      {
+        "name": "mitral stenosis",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The presence of a low-pitched diastolic rumble and opening snap at the apex is characteristic of mitral stenosis."
+      },
+      {
+        "name": "multiple sclerosis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While MS is a neurological condition, it does not relate to the cardiac findings described."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "mitral stenosis",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The presence of a low-pitched diastolic rumble and opening snap at the apex is characteristic of mitral stenosis.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "multiple sclerosis",
+        "node": "multiple sclerosis",
+        "label": "Disease",
+        "similarity": 0.4449,
+        "subgraph_text": "multiple sclerosis (disease), indication: Teriflunomide, Dalfampridine, Natalizumab, Ozanimod, Hydrocortisone acetate, Cortisone acetate, Methylprednisolone, Prednisone; contraindication: Zinc gluconate, Ascorbic acid; associated with: CD6, CLDN11, TNFSF14, IL7, KCNJ10, PDCD1, MCAM, CD58"
+      }
+    ],
+    "utama_top5": "multiple sclerosis [Disease] | Natalizumab [Drug] | MCAM [Protein] | Prednisolone [Drug] | Dexamethasone [Drug]",
+    "base_keywords": [
+      "ms",
+      "patient",
+      "history",
+      "rheumatic",
+      "fever",
+      "low",
+      "pitched",
+      "diastolic",
+      "rumble",
+      "apex",
+      "opening",
+      "snap"
+    ],
+    "base_matched": [
+      "rheumatic fever",
+      "Low-grade fever",
+      "Abnormally low-pitched voice",
+      "MS",
+      "Fever"
+    ],
+    "base_top5": "Arrhythmia [Phenotype] | Fasciculations [Phenotype] | rheumatic fever [Disease] | Myocarditis [Phenotype] | Neurological speech impairment [Phenotype]"
+  },
+  {
+    "query_id": "A03",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 0.4,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.1429,
+    "utama_interpretasi": "myocardial infarction",
+    "base_interpretasi": "Marburg hemorrhagic fever",
+    "latency_utama_s": 0.04,
+    "latency_base_s": 0.34,
+    "llm_cached": 1,
+    "query": "MI in a 60-year-old smoker with crushing chest pain radiating to the left arm, sweating, and ST elevation on ECG.",
+    "gold": [
+      "myocardial infarction (disease)",
+      "myocardial infarction",
+      "ST-elevation myocardial infarction"
+    ],
+    "candidates": [
+      {
+        "name": "myocardial infarction",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The symptoms of crushing chest pain, radiation to the left arm, and ST elevation strongly indicate myocardial infarction."
+      },
+      {
+        "name": "mitral insufficiency",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While possible, the context does not support mitral insufficiency as the primary concern."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "mitral insufficiency",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While possible, the context does not support mitral insufficiency as the primary concern.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "myocardial infarction",
+        "node": "myocardial infarction",
+        "label": "Disease",
+        "similarity": 0.5199,
+        "subgraph_text": "myocardial infarction (disease), indication: Reteplase, Tenecteplase, Phenprocoumon, Alteplase, Acetylsalicylic acid, Dicoumarol, Atenolol, Metoprolol; contraindication: Nylidrin, Alvimopan, Tegaserod, Amrinone, Ozanimod, Etidocaine, Noscapine, Papaverine; off-label use: Adomiparin, Ardeparin, Heparin, bovine, Heparin, Nitroglycerin, Fondaparinux, Enoxaparin, Dalteparin; associated with: DGKZ, MIAT, MIR761, SELL, BRAP, PSMA6, TNFRSF12A, KLK1"
+      }
+    ],
+    "utama_top5": "myocardial infarction [Disease] | MIAT [Protein] | MIA3 [Protein] | MFF [Protein] | Alteplase [Drug]",
+    "base_keywords": [
+      "mi",
+      "year",
+      "old",
+      "smoker",
+      "crushing",
+      "chest",
+      "pain",
+      "radiating",
+      "left",
+      "arm",
+      "sweating",
+      "st",
+      "elevation",
+      "ecg"
+    ],
+    "base_matched": [
+      "Chest pain",
+      "ST segment elevation",
+      "ST-elevation myocardial infarction",
+      "Pain",
+      "Ear pain"
+    ],
+    "base_top5": "Marburg hemorrhagic fever [Disease] | familial Mediterranean fever, autosomal dominant [Disease] | immune-mediated necrotizing myopathy [Disease] | obsolete rare circulatory system disease [Disease] | Chest pain [Phenotype]"
+  },
+  {
+    "query_id": "A04",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.2,
+    "base_rr": 1.0,
+    "utama_interpretasi": "myocardial infarction",
+    "base_interpretasi": "partial atrioventricular canal",
+    "latency_utama_s": 3.83,
+    "latency_base_s": 0.15,
+    "llm_cached": 0,
+    "query": "MI heard as a holosystolic murmur at the apex radiating to the axilla.",
+    "gold": [
+      "Mitral regurgitation"
+    ],
+    "candidates": [
+      {
+        "name": "myocardial infarction",
+        "entity_type": "disease",
+        "confidence": 0.8,
+        "reason": "The context suggests a heart condition with a murmur, which aligns with myocardial infarction."
+      },
+      {
+        "name": "mitral insufficiency",
+        "entity_type": "disease",
+        "confidence": 0.2,
+        "reason": "A holosystolic murmur at the apex radiating to the axilla is characteristic of mitral insufficiency."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "mitral insufficiency",
+        "entity_type": "disease",
+        "confidence": 0.2,
+        "reason": "A holosystolic murmur at the apex radiating to the axilla is characteristic of mitral insufficiency.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "myocardial infarction",
+        "node": "myocardial infarction",
+        "label": "Disease",
+        "similarity": 0.3139,
+        "subgraph_text": "myocardial infarction (disease), indication: Reteplase, Tenecteplase, Phenprocoumon, Alteplase, Acetylsalicylic acid, Dicoumarol, Atenolol, Metoprolol; contraindication: Nylidrin, Alvimopan, Tegaserod, Amrinone, Ozanimod, Etidocaine, Noscapine, Papaverine; off-label use: Adomiparin, Ardeparin, Heparin, bovine, Heparin, Nitroglycerin, Fondaparinux, Enoxaparin, Dalteparin; associated with: DGKZ, MIAT, MIR761, SELL, BRAP, PSMA6, TNFRSF12A, KLK1"
+      }
+    ],
+    "utama_top5": "myocardial infarction [Disease] | Atenolol [Drug] | Acetylsalicylic acid [Drug] | Lisinopril [Drug] | MIAT [Protein]",
+    "base_keywords": [
+      "mi",
+      "heard",
+      "holosystolic",
+      "murmur",
+      "apex",
+      "radiating",
+      "axilla"
+    ],
+    "base_matched": [
+      "Heart murmur",
+      "Midsystolic murmur",
+      "Systolic heart murmur",
+      "Skin dimple over apex of long bone angulation"
+    ],
+    "base_top5": "partial atrioventricular canal [Disease] | Midsystolic murmur [Phenotype] | Heart murmur [Phenotype] | pulmonary artery coming from the aorta [Disease] | atrial septal defect, sinus venosus type [Disease]"
+  },
+  {
+    "query_id": "A05",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 3,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 0.6,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "Alzheimer disease",
+    "base_interpretasi": "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome",
+    "latency_utama_s": 19.1,
+    "latency_base_s": 0.26,
+    "llm_cached": 0,
+    "query": "What medications are available for AD in an elderly patient with progressive memory loss and difficulty finding words?",
+    "gold": [
+      "Alzheimer disease"
+    ],
+    "candidates": [
+      {
+        "name": "Alzheimer's disease",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "Progressive memory loss and difficulty finding words are classic symptoms of Alzheimer's disease."
+      },
+      {
+        "name": "atopic dermatitis",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "While AD can refer to atopic dermatitis, it does not relate to memory loss."
+      },
+      {
+        "name": "attention deficit disorder",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "This condition is unlikely in an elderly patient with the described symptoms."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "attention deficit disorder",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "This condition is unlikely in an elderly patient with the described symptoms.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Alzheimer's disease",
+        "node": "Alzheimer disease",
+        "label": "Disease",
+        "similarity": 0.5789,
+        "subgraph_text": "Alzheimer disease (disease), phenotype present: Decreased level of GABA in serum, Optic ataxia, Parietal hypometabolism in FDG PET, Semantic dementia, Deposits immunoreactive to beta-amyloid protein, Long-tract signs, Senile plaques, Hippocampal atrophy; indication: Pramiracetam, Epicriptine, Ipidacrine, Acetylcarnitine, Tacrine, Galantamine, Donepezil, Rivastigmine; contraindication: Chlorprothixene, Iloperidone, Propiomazine, Methocarbamol, Acetophenazine, Triflupromazine, Methotrimeprazine, Molindone; associated with: ABCA7, ABI3, CASS4, CYP46A1, GAPDHS, IQCK, MIR296, MIR3622B"
+      },
+      {
+        "candidate": "atopic dermatitis",
+        "node": "atopic dermatitis",
+        "label": "Disease",
+        "similarity": 0.1536,
+        "subgraph_text": "atopic dermatitis (disease), associated with: FLG"
+      }
+    ],
+    "utama_top5": "Donepezil [Drug] | Galantamine [Drug] | Salicylamide [Drug] | Pramiracetam [Drug] | Iloperidone [Drug]",
+    "base_keywords": [
+      "medications",
+      "available",
+      "ad",
+      "elderly",
+      "patient",
+      "progressive",
+      "memory",
+      "loss",
+      "difficulty",
+      "finding",
+      "words"
+    ],
+    "base_matched": [
+      "Progressive visual loss",
+      "Progressive loss of facial adipose tissue",
+      "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome",
+      "congenital cataract-progressive muscular hypotonia-hearing loss-developmental delay syndrome",
+      "Visual loss"
+    ],
+    "base_top5": "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome [Disease] | Progressive [Phenotype] | early-onset progressive neurodegeneration-blindness-ataxia-spasticity syndrome [Disease] | Encephalopathy [Phenotype] | congenital cataract-progressive muscular hypotonia-hearing loss-developmental delay syndrome [Disease]"
+  },
+  {
+    "query_id": "A06",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 3,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0769,
+    "utama_interpretasi": "multiple system atrophy",
+    "base_interpretasi": "multiple system atrophy, parkinsonian type",
+    "latency_utama_s": 3.55,
+    "latency_base_s": 0.23,
+    "llm_cached": 0,
+    "query": "MSA in a 54-year-old man with parkinsonism, orthostatic hypotension, and urinary incontinence.",
+    "gold": [
+      "multiple system atrophy"
+    ],
+    "candidates": [
+      {
+        "name": "multiple system atrophy",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The presence of parkinsonism, orthostatic hypotension, and urinary incontinence strongly suggests multiple system atrophy."
+      },
+      {
+        "name": "muscle strength assessment",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "Not relevant to the symptoms described."
+      },
+      {
+        "name": "medication safety assessment",
+        "entity_type": "phenotype",
+        "confidence": 0.03,
+        "reason": "Not relevant to the symptoms described."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "muscle strength assessment",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "Not relevant to the symptoms described.",
+        "status": "not_found"
+      },
+      {
+        "name": "medication safety assessment",
+        "entity_type": "phenotype",
+        "confidence": 0.03,
+        "reason": "Not relevant to the symptoms described.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "multiple system atrophy",
+        "node": "multiple system atrophy",
+        "label": "Disease",
+        "similarity": 0.6006,
+        "subgraph_text": "multiple system atrophy (disease), phenotype present: Camptocormia, Orthostatic syncope, Autonomic erectile dysfunction, Female anorgasmia, Olivopontocerebellar atrophy, Autonomic bladder dysfunction, Axial dystonia, Iris atrophy; indication: Droxidopa, Midodrine; contraindication: Amyl Nitrite, Guanabenz, Dutasteride, Mesoridazine, Silodosin, Lurasidone, Iloperidone, Bethanechol; off-label use: Cortisone acetate; associated with: COQ2, AVP"
+      }
+    ],
+    "utama_top5": "Parkinsonism [Phenotype] | Autonomic bladder dysfunction [Phenotype] | Autonomic erectile dysfunction [Phenotype] | Abnormal autonomic nervous system physiology [Phenotype] | Adult onset [Phenotype]",
+    "base_keywords": [
+      "msa",
+      "year",
+      "old",
+      "man",
+      "parkinsonism",
+      "orthostatic",
+      "hypotension",
+      "urinary",
+      "incontinence"
+    ],
+    "base_matched": [
+      "Urinary incontinence",
+      "orthostatic hypotension",
+      "Stress urinary incontinence",
+      "Orthostatic hypotension due to autonomic dysfunction",
+      "Parkinsonism"
+    ],
+    "base_top5": "multiple system atrophy, parkinsonian type [Disease] | multiple sclerosis, susceptibility to [Disease] | neurodegeneration, childhood-onset, with ataxia, tremor, optic atrophy, and cognitive decline [Disease] | hypermanganesemia with dystonia [Disease] | cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, [Disease]"
+  },
+  {
+    "query_id": "A07",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 1,
+    "base_p5": 0.4,
+    "base_rr": 1.0,
+    "utama_interpretasi": "amyotrophic lateral sclerosis",
+    "base_interpretasi": "amyotrophic lateral sclerosis",
+    "latency_utama_s": 3.26,
+    "latency_base_s": 0.26,
+    "llm_cached": 0,
+    "query": "ALS in a patient with progressive asymmetric limb weakness, muscle fasciculations, and brisk reflexes.",
+    "gold": [
+      "amyotrophic lateral sclerosis",
+      "Amyotrophic lateral sclerosis"
+    ],
+    "candidates": [
+      {
+        "name": "amyotrophic lateral sclerosis",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "Progressive asymmetric limb weakness and muscle fasciculations are characteristic of amyotrophic lateral sclerosis."
+      },
+      {
+        "name": "acute lymphoblastic leukemia",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While it can cause weakness, it does not typically present with muscle fasciculations."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "amyotrophic lateral sclerosis",
+        "node": "amyotrophic lateral sclerosis",
+        "label": "Disease",
+        "similarity": 0.5573,
+        "subgraph_text": "amyotrophic lateral sclerosis (disease), phenotype present: Pallor of dorsal columns of the spinal cord, Motor neuron atrophy, Bowing of the vocal cords, Degeneration of the lateral corticospinal tracts, Spasticity of facial muscles, Spasticity of pharyngeal muscles, Diffuse axonal swelling, Muscle fiber inclusion bodies; indication: Edaravone, Riluzole; associated with: ARHGEF28, BSG, CD7, DBX1, FGF6, FMO1, GBX2, GSX2"
+      },
+      {
+        "candidate": "acute lymphoblastic leukemia",
+        "node": "acute lymphoblastic leukemia",
+        "label": "Disease",
+        "similarity": 0.1257,
+        "subgraph_text": "acute lymphoblastic leukemia (disease), associated with: CRLF2, HOXD4, P2RY8, TAL2, VPREB1, HCK, NT5C2, PAG1"
+      }
+    ],
+    "utama_top5": "Upper limb spasticity [Phenotype] | Spasticity of facial muscles [Phenotype] | Fatigable weakness of respiratory muscles [Phenotype] | Hand muscle atrophy [Phenotype] | Fatigable weakness of bulbar muscles [Phenotype]",
+    "base_keywords": [
+      "als",
+      "patient",
+      "progressive",
+      "asymmetric",
+      "limb",
+      "weakness",
+      "muscle",
+      "fasciculations",
+      "brisk",
+      "reflexes"
+    ],
+    "base_matched": [
+      "Limb muscle weakness",
+      "Upper limb muscle weakness",
+      "Lower limb muscle weakness",
+      "Limb-girdle muscle weakness",
+      "Progressive muscle weakness"
+    ],
+    "base_top5": "amyotrophic lateral sclerosis [Disease] | frontotemporal dementia and/or amyotrophic lateral sclerosis [Disease] | neuronopathy, distal hereditary motor [Disease] | multifocal motor neuropathy [Disease] | progressive multifocal leukoencephalopathy [Disease]"
+  },
+  {
+    "query_id": "A08",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 0.6,
+    "utama_rr": 0.5,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.1429,
+    "utama_interpretasi": "patent ductus arteriosus",
+    "base_interpretasi": "neonatal Marfan syndrome",
+    "latency_utama_s": 2.34,
+    "latency_base_s": 0.23,
+    "llm_cached": 0,
+    "query": "PDA in a premature infant with a continuous machine-like murmur and bounding pulses.",
+    "gold": [
+      "Patent ductus arteriosus",
+      "patent ductus arteriosus"
+    ],
+    "candidates": [
+      {
+        "name": "patent ductus arteriosus",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The context of a premature infant with a continuous murmur and bounding pulses strongly indicates patent ductus arteriosus."
+      },
+      {
+        "name": "pulmonary ductus arteriosus",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Less common and not typically associated with the described symptoms."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "pulmonary ductus arteriosus",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Less common and not typically associated with the described symptoms.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "patent ductus arteriosus",
+        "node": "patent ductus arteriosus",
+        "label": "Disease",
+        "similarity": 0.2626,
+        "subgraph_text": "patent ductus arteriosus (disease), phenotype present: Patent ductus arteriosus, Autosomal dominant inheritance; indication: Indomethacin, Ibuprofen; associated with: PRDM6, TRAF1, TFAP2B, PTGIS, AGTR1, NPPA"
+      }
+    ],
+    "utama_top5": "NPPA [Protein] | patent ductus arteriosus [Disease] | Patent ductus arteriosus [Phenotype] | Autosomal dominant inheritance [Phenotype] | PTGIS [Protein]",
+    "base_keywords": [
+      "pda",
+      "premature",
+      "infant",
+      "continuous",
+      "machine",
+      "like",
+      "murmur",
+      "bounding",
+      "pulses"
+    ],
+    "base_matched": [
+      "acroosteolysis-keloid-like lesions-premature aging syndrome",
+      "Heart murmur",
+      "Bounding pulse",
+      "Premature birth",
+      "infant botulism"
+    ],
+    "base_top5": "neonatal Marfan syndrome [Disease] | neurodevelopmental disorder with seizures and speech and walking impairment [Disease] | intellectual developmental disorder with impaired language and dysmorphic facies [Disease] | Heart murmur [Phenotype] | ptosis-vocal cord paralysis syndrome [Disease]"
+  },
+  {
+    "query_id": "A09",
+    "type": "acronym",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.1429,
+    "utama_interpretasi": "acute lymphoblastic leukemia",
+    "base_interpretasi": "autosomal dominant aplasia and myelodysplasia",
+    "latency_utama_s": 3.03,
+    "latency_base_s": 0.27,
+    "llm_cached": 0,
+    "query": "AML in an adult with fatigue, bleeding gums, pancytopenia, and Auer rods on the blood smear.",
+    "gold": [
+      "Acute myeloid leukemia"
+    ],
+    "candidates": [
+      {
+        "name": "acute myeloid leukemia",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The symptoms of fatigue, bleeding gums, pancytopenia, and Auer rods are characteristic of acute myeloid leukemia."
+      },
+      {
+        "name": "acute lymphoblastic leukemia",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "While it can present with similar symptoms, Auer rods are not typical for acute lymphoblastic leukemia."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "acute myeloid leukemia",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The symptoms of fatigue, bleeding gums, pancytopenia, and Auer rods are characteristic of acute myeloid leukemia.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "acute lymphoblastic leukemia",
+        "node": "acute lymphoblastic leukemia",
+        "label": "Disease",
+        "similarity": 0.4931,
+        "subgraph_text": "acute lymphoblastic leukemia (disease), associated with: CRLF2, HOXD4, P2RY8, TAL2, VPREB1, HCK, NT5C2, PAG1"
+      }
+    ],
+    "utama_top5": "acute lymphoblastic leukemia [Disease] | MTRR [Protein] | HLF [Protein] | ARNT [Protein] | ERG [Protein]",
+    "base_keywords": [
+      "aml",
+      "adult",
+      "fatigue",
+      "bleeding",
+      "gums",
+      "pancytopenia",
+      "auer",
+      "rods",
+      "blood",
+      "smear"
+    ],
+    "base_matched": [
+      "Fatigue",
+      "Adult onset",
+      "Pancytopenia",
+      "pancytopenia",
+      "Oral bleeding"
+    ],
+    "base_top5": "autosomal dominant aplasia and myelodysplasia [Disease] | aregenerative anemia [Disease] | pancytopenia and occlusive vascular disease [Disease] | acute erythroid leukemia [Disease] | congenital amegakaryocytic thrombocytopenia [Disease]"
+  },
+  {
+    "query_id": "A10",
+    "type": "acronym",
+    "seen_in_development": true,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.6,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "reactive arthritis",
+    "base_interpretasi": "psoriasis-related juvenile idiopathic arthritis",
+    "latency_utama_s": 3.0,
+    "latency_base_s": 0.25,
+    "llm_cached": 0,
+    "query": "RA in a woman with symmetric swelling of the small joints of both hands and morning stiffness lasting more than an hour.",
+    "gold": [
+      "rheumatoid arthritis",
+      "Rheumatoid arthritis"
+    ],
+    "candidates": [
+      {
+        "name": "rheumatoid arthritis",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "Symmetric swelling of small joints and morning stiffness are classic signs of rheumatoid arthritis."
+      },
+      {
+        "name": "reactive arthritis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Less likely as there are no indications of preceding infection or other triggers."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "reactive arthritis",
+        "node": "reactive arthritis",
+        "label": "Disease",
+        "similarity": 0.6314,
+        "subgraph_text": "reactive arthritis (disease), phenotype present: Cartilage destruction, Enthesitis, Abnormal pleura morphology, Dystrophic fingernails, Pustule, Inflammation of the large intestine, Aortic regurgitation, Recurrent aphthous stomatitis"
+      },
+      {
+        "candidate": "rheumatoid arthritis",
+        "node": "rheumatoid arthritis",
+        "label": "Disease",
+        "similarity": 0.499,
+        "subgraph_text": "rheumatoid arthritis (disease), phenotype present: Anti-citrullinated protein antibody positivity, Digital flexor tenosynovitis, Interphalangeal joint erosions, Swan neck-like deformities of the fingers, Rheumatoid factor positive, Polyarticular arthritis, Rheumatoid arthritis, Elevated C-reactive protein level; indication: Alclofenac, Benoxaprofen, Flunoxaprofen, Iguratimod, Loxoprofen, Tenidap, Tofacitinib, Upadacitinib; contraindication: Bromfenac, Zinc gluconate, Nepafenac, Tromethamine, Ascorbic acid, Ketorolac; off-label use: Sulfadiazine, Minocycline, Valdecoxib; associated with: B3GNT9, BAIAP2L1, CCL21, CD244, CLEC12A, DDX6, GIN1, GPRC5A"
+      }
+    ],
+    "utama_top5": "Joint swelling [Phenotype] | reactive arthritis [Disease] | Joint stiffness [Phenotype] | Arthritis [Phenotype] | Arthralgia [Phenotype]",
+    "base_keywords": [
+      "ra",
+      "woman",
+      "symmetric",
+      "swelling",
+      "small",
+      "joints",
+      "hands",
+      "morning",
+      "stiffness",
+      "lasting",
+      "hour"
+    ],
+    "base_matched": [
+      "Generalized morning stiffness",
+      "Ankylosis of feet small joints",
+      "Subluxation of the small joints of the hand",
+      "Swelling of proximal interphalangeal joints",
+      "Osteoarthritis of the small joints of the hand"
+    ],
+    "base_top5": "psoriasis-related juvenile idiopathic arthritis [Disease] | osteoarthritis [Disease] | aneurysm-osteoarthritis syndrome [Disease] | Generalized morning stiffness [Phenotype] | Osteoarthritis of the small joints of the hand [Phenotype]"
+  },
+  {
+    "query_id": "P01",
+    "type": "polysemy",
+    "seen_in_development": true,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 3,
+    "n_mapped": 2,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.1111,
+    "base_da": 0,
+    "base_p5": 0.2,
+    "base_rr": 0.5,
+    "utama_interpretasi": "major depressive disorder",
+    "base_interpretasi": "Decreased pulmonary function",
+    "latency_utama_s": 2.88,
+    "latency_base_s": 0.24,
+    "llm_cached": 0,
+    "query": "A patient on high-dose morphine develops depression with slow, shallow breathing and drowsiness.",
+    "gold": [
+      "Respiratory failure",
+      "Respiratory insufficiency",
+      "Hypoventilation",
+      "Respiratory arrest",
+      "respiratory failure"
+    ],
+    "candidates": [
+      {
+        "name": "Major depressive disorder",
+        "entity_type": "disease",
+        "confidence": 0.7,
+        "reason": "The patient is on high-dose morphine, which can lead to mood disorders."
+      },
+      {
+        "name": "Depressive episode",
+        "entity_type": "disease",
+        "confidence": 0.2,
+        "reason": "Symptoms of low mood may arise from opioid use."
+      },
+      {
+        "name": "Psychomotor retardation",
+        "entity_type": "phenotype",
+        "confidence": 0.1,
+        "reason": "Slow and shallow breathing may indicate a state of reduced motor activity."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "Depressive episode",
+        "entity_type": "disease",
+        "confidence": 0.2,
+        "reason": "Symptoms of low mood may arise from opioid use.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Major depressive disorder",
+        "node": "major depressive disorder",
+        "label": "Disease",
+        "similarity": 0.4226,
+        "subgraph_text": "major depressive disorder (disease), indication: Gepirone, Vortioxetine, Brexpiprazole, Levomilnacipran, Vilazodone, Agomelatine, Mianserin, Dosulepin; off-label use: Ketamine; associated with: PDCD2, EIF4B, FKBP4, GDE1, GMIP, IKBKE, KYAT3, LHPP"
+      },
+      {
+        "candidate": "Psychomotor retardation",
+        "node": "Psychomotor retardation",
+        "label": "Phenotype",
+        "similarity": 0.1755,
+        "subgraph_text": "Psychomotor retardation (phenotype), phenotype present: microcephaly-albinism-digital anomalies syndrome, microcephaly, corpus callosum dysgenesis, and cleft lip/palate, normal pressure hydrocephalus, Cayman type cerebellar ataxia, contractures-ectodermal dysplasia-cleft lip/palate syndrome, Onychotrichodysplasia and neutropenia, GABA aminotransferase deficiency, congenital cataract-hearing loss-severe developmental delay syndrome"
+      }
+    ],
+    "utama_top5": "Vortioxetine [Drug] | Nefazodone [Drug] | Mianserin [Drug] | Vilazodone [Drug] | Paroxetine [Drug]",
+    "base_keywords": [
+      "patient",
+      "high",
+      "dose",
+      "morphine",
+      "develops",
+      "depression",
+      "slow",
+      "shallow",
+      "breathing",
+      "drowsiness"
+    ],
+    "base_matched": [
+      "Morphine",
+      "Drowsiness",
+      "High palate",
+      "High myopia",
+      "High forehead"
+    ],
+    "base_top5": "Decreased pulmonary function [Phenotype] | Respiratory arrest [Phenotype] | Hyperesthesia [Phenotype] | Apathy [Phenotype] | Involuntary movements [Phenotype]"
+  },
+  {
+    "query_id": "P02",
+    "type": "polysemy",
+    "seen_in_development": true,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 4,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "major depressive disorder",
+    "base_interpretasi": "sensorineural hearing loss-early graying-essential tremor syndrome",
+    "latency_utama_s": 3.09,
+    "latency_base_s": 0.28,
+    "llm_cached": 0,
+    "query": "Depression with persistently low mood, loss of interest in activities, and early-morning awakening for the past two months.",
+    "gold": [
+      "major depressive disorder",
+      "unipolar depression"
+    ],
+    "candidates": [
+      {
+        "name": "Major depressive disorder",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The symptoms of low mood, loss of interest, and early-morning awakening align with major depressive disorder."
+      },
+      {
+        "name": "Depressive episode",
+        "entity_type": "disease",
+        "confidence": 0.07,
+        "reason": "Could refer to a specific episode but lacks the chronicity implied."
+      },
+      {
+        "name": "Psychomotor retardation",
+        "entity_type": "phenotype",
+        "confidence": 0.02,
+        "reason": "Could be a symptom but does not encompass the full context of the query."
+      },
+      {
+        "name": "Secondary depression",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Possible if related to another underlying condition, but no such condition is mentioned."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "Depressive episode",
+        "entity_type": "disease",
+        "confidence": 0.07,
+        "reason": "Could refer to a specific episode but lacks the chronicity implied.",
+        "status": "not_found"
+      },
+      {
+        "name": "Secondary depression",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Possible if related to another underlying condition, but no such condition is mentioned.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Major depressive disorder",
+        "node": "major depressive disorder",
+        "label": "Disease",
+        "similarity": 0.5199,
+        "subgraph_text": "major depressive disorder (disease), indication: Gepirone, Vortioxetine, Brexpiprazole, Levomilnacipran, Vilazodone, Agomelatine, Mianserin, Dosulepin; off-label use: Ketamine; associated with: PDCD2, EIF4B, FKBP4, GDE1, GMIP, IKBKE, KYAT3, LHPP"
+      },
+      {
+        "candidate": "Psychomotor retardation",
+        "node": "Psychomotor retardation",
+        "label": "Phenotype",
+        "similarity": 0.2051,
+        "subgraph_text": "Psychomotor retardation (phenotype), phenotype present: microcephaly-albinism-digital anomalies syndrome, microcephaly, corpus callosum dysgenesis, and cleft lip/palate, normal pressure hydrocephalus, Cayman type cerebellar ataxia, contractures-ectodermal dysplasia-cleft lip/palate syndrome, Onychotrichodysplasia and neutropenia, GABA aminotransferase deficiency, congenital cataract-hearing loss-severe developmental delay syndrome"
+      }
+    ],
+    "utama_top5": "major depressive disorder [Disease] | Mirtazapine [Drug] | Vortioxetine [Drug] | Levomilnacipran [Drug] | Agomelatine [Drug]",
+    "base_keywords": [
+      "depression",
+      "persistently",
+      "low",
+      "mood",
+      "loss",
+      "interest",
+      "activities",
+      "early",
+      "morning",
+      "awakening",
+      "past",
+      "two",
+      "months"
+    ],
+    "base_matched": [
+      "Low-frequency hearing loss",
+      "Loss of ability to walk in early childhood",
+      "sensorineural hearing loss-early graying-essential tremor syndrome",
+      "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome",
+      "Visual loss"
+    ],
+    "base_top5": "sensorineural hearing loss-early graying-essential tremor syndrome [Disease] | early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome [Disease] | Tremor [Phenotype] | Hypsarrhythmia [Phenotype] | Dysphagia [Phenotype]"
+  },
+  {
+    "query_id": "P03",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "acronym",
+    "llm_type": "acronym",
+    "n_candidates": 2,
+    "n_mapped": 0,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.125,
+    "utama_interpretasi": "",
+    "base_interpretasi": "Chest pain",
+    "latency_utama_s": 2.01,
+    "latency_base_s": 0.25,
+    "llm_cached": 0,
+    "query": "The ECG shows horizontal depression in leads V4 to V6 during an episode of exertional chest pain.",
+    "gold": [
+      "ST segment depression"
+    ],
+    "candidates": [
+      {
+        "name": "electrocardiogram",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The context indicates a cardiac test showing specific findings."
+      },
+      {
+        "name": "exercise-induced cardiac events",
+        "entity_type": "phenotype",
+        "confidence": 0.1,
+        "reason": "While exertional chest pain is mentioned, it is less specific than the test itself."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "electrocardiogram",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The context indicates a cardiac test showing specific findings.",
+        "status": "not_found"
+      },
+      {
+        "name": "exercise-induced cardiac events",
+        "entity_type": "phenotype",
+        "confidence": 0.1,
+        "reason": "While exertional chest pain is mentioned, it is less specific than the test itself.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [],
+    "utama_top5": "",
+    "base_keywords": [
+      "ecg",
+      "shows",
+      "horizontal",
+      "depression",
+      "leads",
+      "v4",
+      "v6",
+      "episode",
+      "exertional",
+      "chest",
+      "pain"
+    ],
+    "base_matched": [
+      "Chest pain",
+      "Pain",
+      "Ear pain",
+      "Hip pain",
+      "Jaw pain"
+    ],
+    "base_top5": "Chest pain [Phenotype] | coronary artery disease, autosomal dominant [Disease] | Ebstein anomaly (disease) [Disease] | pericardial and diaphragmatic defect [Disease] | arrhythmogenic right ventricular dysplasia, familial, 14 [Disease]"
+  },
+  {
+    "query_id": "P04",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "common cold",
+    "base_interpretasi": "bifid nose",
+    "latency_utama_s": 2.12,
+    "latency_base_s": 0.21,
+    "llm_cached": 0,
+    "query": "Cold with a runny nose, sneezing, and a mild sore throat for three days.",
+    "gold": [
+      "common cold"
+    ],
+    "candidates": [
+      {
+        "name": "common cold",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The symptoms of runny nose, sneezing, and sore throat are typical of a common cold."
+      },
+      {
+        "name": "hypothermia",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While 'cold' can refer to low body temperature, no symptoms indicate hypothermia."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "hypothermia",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While 'cold' can refer to low body temperature, no symptoms indicate hypothermia.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "common cold",
+        "node": "common cold",
+        "label": "Disease",
+        "similarity": 0.3691,
+        "subgraph_text": "common cold (disease), indication: Loracarbef, Phenindamine, Xylometazoline, Methdilazine, Cefradine, Tetryzoline, Diphenylpyraline, Methapyrilene; contraindication: Desmopressin"
+      }
+    ],
+    "utama_top5": "common cold [Disease] | Loracarbef [Drug] | Clemastine [Drug] | Clofedanol [Drug] | Cefixime [Drug]",
+    "base_keywords": [
+      "cold",
+      "runny",
+      "nose",
+      "sneezing",
+      "mild",
+      "sore",
+      "throat",
+      "three",
+      "days"
+    ],
+    "base_matched": [
+      "Wide nose",
+      "Long nose",
+      "bifid nose",
+      "Short nose",
+      "Bifid nose"
+    ],
+    "base_top5": "bifid nose [Disease] | rhiny [Disease] | hyper-IgE recurrent infection syndrome 3, autosomal recessive [Disease] | Alagille syndrome [Disease] | hypotrichosis-lymphedema-telangiectasia-renal defect syndrome [Disease]"
+  },
+  {
+    "query_id": "P05",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 3,
+    "n_mapped": 3,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "Hypothermia",
+    "base_interpretasi": "Shivering",
+    "latency_utama_s": 3.97,
+    "latency_base_s": 0.37,
+    "llm_cached": 0,
+    "query": "Cold in an elderly man found outdoors on a winter night, shivering and confused, with a core body temperature of 33 degrees Celsius.",
+    "gold": [
+      "Hypothermia"
+    ],
+    "candidates": [
+      {
+        "name": "Hypothermia",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The core body temperature of 33 degrees Celsius indicates hypothermia."
+      },
+      {
+        "name": "Common cold",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "No respiratory symptoms are mentioned, making this less likely."
+      },
+      {
+        "name": "Chills",
+        "entity_type": "phenotype",
+        "confidence": 0.03,
+        "reason": "While shivering suggests chills, it is a symptom of hypothermia."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "Hypothermia",
+        "node": "Hypothermia",
+        "label": "Phenotype",
+        "similarity": 0.3148,
+        "subgraph_text": "Hypothermia (phenotype), phenotype present: spontaneous periodic hypothermia, 2-methylbutyryl-CoA dehydrogenase deficiency, mitochondrial complex 3 deficiency, nuclear type 10, congenital hypothyroidism due to maternal intake of antithyroid drugs, primary erythermalgia, yellow fever, dopamine beta-hydroxylase deficiency, hypotonia, hypoventilation, impaired intellectual development, dysautonomia, epilepsy, and eye abnormalities; side effect: Nitrazepam, Oseltamivir, Temazepam, Tetrabenazine, Mifamurtide, Gadopentetic acid, Remifentanil, Dexmedetomidine"
+      },
+      {
+        "candidate": "Chills",
+        "node": "Chills",
+        "label": "Phenotype",
+        "similarity": 0.2943,
+        "subgraph_text": "Chills (phenotype), phenotype present: rat-bite fever, hereditary elliptocytosis, herpes simplex encephalitis, Caroli disease, spherocytosis, relapsing fever, subcutaneous panniculitis-like T-cell lymphoma, tularemia"
+      },
+      {
+        "candidate": "Common cold",
+        "node": "common cold",
+        "label": "Disease",
+        "similarity": 0.2306,
+        "subgraph_text": "common cold (disease), indication: Loracarbef, Phenindamine, Xylometazoline, Methdilazine, Cefradine, Tetryzoline, Diphenylpyraline, Methapyrilene; contraindication: Desmopressin"
+      }
+    ],
+    "utama_top5": "Hypothermia [Phenotype] | spontaneous periodic hypothermia [Disease] | neuropathy, hereditary sensory, motor and autonomic [Disease] | meningococcal infection [Disease] | sarcoidosis [Disease]",
+    "base_keywords": [
+      "cold",
+      "elderly",
+      "man",
+      "found",
+      "outdoors",
+      "winter",
+      "night",
+      "shivering",
+      "confused",
+      "core",
+      "body",
+      "temperature",
+      "degrees",
+      "celsius"
+    ],
+    "base_matched": [
+      "Shivering",
+      "Body odor",
+      "common cold",
+      "Night sweats",
+      "Cold paresis"
+    ],
+    "base_top5": "Shivering [Phenotype] | Cold paresis [Phenotype] | staphylococcal pneumonia [Disease] | monomelic amyotrophy [Disease] | common cold [Disease]"
+  },
+  {
+    "query_id": "P06",
+    "type": "polysemy",
+    "seen_in_development": true,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 5,
+    "n_mapped": 4,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0133,
+    "utama_interpretasi": "Hypoglycemia",
+    "base_interpretasi": "Red urine",
+    "latency_utama_s": 5.18,
+    "latency_base_s": 0.36,
+    "llm_cached": 0,
+    "query": "Diabetes after a head injury with large volumes of dilute urine and intense thirst, while blood glucose remains normal.",
+    "gold": [
+      "Diabetes insipidus",
+      "neurohypophyseal diabetes insipidus",
+      "diabetes insipidus"
+    ],
+    "candidates": [
+      {
+        "name": "Diabetes insipidus",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Large volumes of dilute urine and intense thirst suggest diabetes insipidus."
+      },
+      {
+        "name": "Diabetes mellitus",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Blood glucose remains normal, making diabetes mellitus less likely."
+      },
+      {
+        "name": "Hyperglycemia",
+        "entity_type": "phenotype",
+        "confidence": 0.03,
+        "reason": "Not supported by the context as blood glucose is normal."
+      },
+      {
+        "name": "Hypoglycemia",
+        "entity_type": "phenotype",
+        "confidence": 0.02,
+        "reason": "Not indicated by the symptoms described."
+      },
+      {
+        "name": "Glucosuria",
+        "entity_type": "phenotype",
+        "confidence": 0.01,
+        "reason": "While glucose in urine is mentioned, it does not fit the overall context."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "Glucosuria",
+        "entity_type": "phenotype",
+        "confidence": 0.01,
+        "reason": "While glucose in urine is mentioned, it does not fit the overall context.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Hypoglycemia",
+        "node": "Hypoglycemia",
+        "label": "Phenotype",
+        "similarity": 0.3866,
+        "subgraph_text": "Hypoglycemia (phenotype), phenotype present: exercise-induced hyperinsulinism, fructose and galactose intolerance, phosphoenolpyruvate carboxykinase deficiency, mitochondrial, 3-hydroxy-3-methylglutaryl-CoA synthase deficiency, dwarfism, low-birth-weight type, with unresponsiveness to growth hormone, maternal riboflavin deficiency, homozygous 11P15-p14 deletion syndrome, short stature due to partial GHR deficiency; side effect: Alogliptin, Pramlintide, Isoxsuprine, Oritavancin, Oxprenolol, Vildagliptin, Conivaptan, Dalbavancin"
+      },
+      {
+        "candidate": "Diabetes mellitus",
+        "node": "diabetes mellitus (disease)",
+        "label": "Disease",
+        "similarity": 0.3448,
+        "subgraph_text": "diabetes mellitus (disease) (disease), phenotype present: Diabetic ketoacidosis, Maternal diabetes, Insulin-resistant diabetes mellitus, Glucose intolerance, Type I diabetes mellitus, Type II diabetes mellitus, Abnormality of the endocrine system; indication: Acetohexamide, Anagliptin, Buformin, Canagliflozin, Carbutamide, Dapagliflozin, Dulaglutide, Empagliflozin; contraindication: Ademetionine, Histrelin, Medetomidine, Xylometazoline, Dexfenfluramine, Fenfluramine, Etretinate, Ammonia; associated with: AP3S2, C2CD4A, C2CD4B, CMIP, DGKD, EPC2, FAM234A, GCKR"
+      },
+      {
+        "candidate": "Hyperglycemia",
+        "node": "Hyperglycemia",
+        "label": "Phenotype",
+        "similarity": 0.3446,
+        "subgraph_text": "Hyperglycemia (phenotype), phenotype present: hyperproinsulinemia, Mitchell-Riley syndrome, male hypergonadotropic hypogonadism-intellectual disability-skeletal anomalies syndrome, permanent neonatal diabetes mellitus-pancreatic and cerebellar agenesis syndrome, cone-rod synaptic disorder, congenital nonprogressive, ACTH-independent macronodular adrenal hyperplasia, maternally-inherited diabetes and deafness, congenital lactic acidosis, Saguenay-Lac-Saint-Jean type; side effect: Atosiban, Clobetasone, Troglitazone, Erythropoietin, Clobetasol, Conivaptan, Oxtriphylline, Aminophylline"
+      },
+      {
+        "candidate": "Diabetes insipidus",
+        "node": "diabetes insipidus",
+        "label": "Disease",
+        "similarity": 0.2448,
+        "subgraph_text": "diabetes insipidus (disease), contraindication: Lithium citrate, Lithium carbonate, Meclocycline, Demeclocycline; off-label use: Chlorpropamide, Methyclothiazide, Chlorthalidone, Carbamazepine; associated with: AVP, POMC"
+      }
+    ],
+    "utama_top5": "iatrogenic or traumatic pituitary deficiency [Disease] | Hypoglycemia [Phenotype] | hypoglycemia, leucine-induced [Disease] | glucocorticoid deficiency [Disease] | glucocorticoid resistance [Disease]",
+    "base_keywords": [
+      "diabetes",
+      "head",
+      "injury",
+      "large",
+      "volumes",
+      "dilute",
+      "urine",
+      "intense",
+      "thirst",
+      "blood",
+      "glucose",
+      "remains",
+      "normal"
+    ],
+    "base_matched": [
+      "Low-to-normal blood pressure",
+      "cleft palate-large ears-small head syndrome",
+      "injury",
+      "Red urine",
+      "Large face"
+    ],
+    "base_top5": "Red urine [Phenotype] | injury [Disease] | hypotensive disorder [Disease] | myopathy due to malate-aspartate shuttle defect [Disease] | Glyburide [Drug]"
+  },
+  {
+    "query_id": "P07",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 3,
+    "n_mapped": 0,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "",
+    "base_interpretasi": "Cockayne syndrome",
+    "latency_utama_s": 2.61,
+    "latency_base_s": 0.25,
+    "llm_cached": 0,
+    "query": "Shock minutes after a bee sting, with hives, wheezing, and a sudden drop in blood pressure.",
+    "gold": [
+      "Anaphylactic shock"
+    ],
+    "candidates": [
+      {
+        "name": "Hypotension",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The sudden drop in blood pressure aligns with hypotension due to anaphylaxis."
+      },
+      {
+        "name": "Shock",
+        "entity_type": "disease",
+        "confidence": 0.08,
+        "reason": "Shock is a broader term but relevant due to the context of bee sting and symptoms."
+      },
+      {
+        "name": "Blood pressure measurement",
+        "entity_type": "phenotype",
+        "confidence": 0.02,
+        "reason": "While relevant, the context suggests a pathological state rather than just measurement."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "Hypotension",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The sudden drop in blood pressure aligns with hypotension due to anaphylaxis.",
+        "status": "not_found"
+      },
+      {
+        "name": "Shock",
+        "entity_type": "disease",
+        "confidence": 0.08,
+        "reason": "Shock is a broader term but relevant due to the context of bee sting and symptoms.",
+        "status": "type_mismatch"
+      },
+      {
+        "name": "Blood pressure measurement",
+        "entity_type": "phenotype",
+        "confidence": 0.02,
+        "reason": "While relevant, the context suggests a pathological state rather than just measurement.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [],
+    "utama_top5": "",
+    "base_keywords": [
+      "shock",
+      "minutes",
+      "bee",
+      "sting",
+      "hives",
+      "wheezing",
+      "sudden",
+      "drop",
+      "blood",
+      "pressure"
+    ],
+    "base_matched": [
+      "Increased blood pressure",
+      "Low-to-normal blood pressure",
+      "Abnormal systemic blood pressure",
+      "Elevated systolic blood pressure",
+      "Elevated diastolic blood pressure"
+    ],
+    "base_top5": "Cockayne syndrome [Disease] | hypotensive disorder [Disease] | Increased blood pressure [Phenotype] | Elevated systolic blood pressure [Phenotype] | Low-to-normal blood pressure [Phenotype]"
+  },
+  {
+    "query_id": "P08",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "polysemy",
+    "n_candidates": 2,
+    "n_mapped": 0,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "",
+    "base_interpretasi": "Vomiting",
+    "latency_utama_s": 2.44,
+    "latency_base_s": 0.29,
+    "llm_cached": 0,
+    "query": "Shock in a child after two days of profuse watery diarrhea and vomiting, with dry mucous membranes and sunken eyes.",
+    "gold": [
+      "Hypovolemic shock"
+    ],
+    "candidates": [
+      {
+        "name": "hypovolemic shock",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The context of diarrhea and vomiting suggests fluid loss leading to hypovolemic shock."
+      },
+      {
+        "name": "emotional shock",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "While possible, the context does not indicate psychological trauma."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "hypovolemic shock",
+        "entity_type": "disease",
+        "confidence": 0.95,
+        "reason": "The context of diarrhea and vomiting suggests fluid loss leading to hypovolemic shock.",
+        "status": "type_mismatch"
+      },
+      {
+        "name": "emotional shock",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "While possible, the context does not indicate psychological trauma.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [],
+    "utama_top5": "",
+    "base_keywords": [
+      "shock",
+      "child",
+      "two",
+      "days",
+      "profuse",
+      "watery",
+      "diarrhea",
+      "vomiting",
+      "dry",
+      "mucous",
+      "membranes",
+      "sunken",
+      "eyes"
+    ],
+    "base_matched": [
+      "diarrhea-vomiting due to trehalase deficiency",
+      "Shock",
+      "Vomiting",
+      "Dry skin",
+      "Dry hair"
+    ],
+    "base_top5": "Vomiting [Phenotype] | necrotizing enterocolitis [Disease] | toxic shock syndrome [Disease] | congenital malabsorptive diarrhea 4 [Disease] | edema, familial idiopathic, prepubertal [Disease]"
+  },
+  {
+    "query_id": "P09",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "polysemy",
+    "n_candidates": 3,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 0,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "cerebral infarction",
+    "base_interpretasi": "acute liver failure",
+    "latency_utama_s": 3.06,
+    "latency_base_s": 0.33,
+    "llm_cached": 0,
+    "query": "Infarction causing sudden weakness of the right arm and leg with slurred speech.",
+    "gold": [
+      "cerebral infarction",
+      "Ischemic stroke"
+    ],
+    "candidates": [
+      {
+        "name": "cerebral infarction",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "Sudden weakness of the right arm and leg with slurred speech strongly indicates a stroke."
+      },
+      {
+        "name": "myocardial infarction",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "While it can cause weakness, it typically presents with chest pain, not slurred speech."
+      },
+      {
+        "name": "pulmonary infarction",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could cause weakness but is less likely to present with slurred speech."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "pulmonary infarction",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could cause weakness but is less likely to present with slurred speech.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "cerebral infarction",
+        "node": "cerebral infarction",
+        "label": "Disease",
+        "similarity": 0.571,
+        "subgraph_text": "cerebral infarction (disease), indication: Vorapaxar, Rosuvastatin, Simvastatin, Ramipril, Telmisartan, Pravastatin, Atorvastatin, Amlodipine; contraindication: Tegaserod, Ozanimod, Tirofiban, Inositol nicotinate, Inositol, Lurasidone, Ergometrine, Isosorbide dinitrate; off-label use: Lovastatin, Fluvastatin; associated with: ALOX5AP, PRKCH, ADH1B, F5, HBA1, VDR, NPY, PLAT"
+      },
+      {
+        "candidate": "myocardial infarction",
+        "node": "myocardial infarction",
+        "label": "Disease",
+        "similarity": 0.4153,
+        "subgraph_text": "myocardial infarction (disease), indication: Reteplase, Tenecteplase, Phenprocoumon, Alteplase, Acetylsalicylic acid, Dicoumarol, Atenolol, Metoprolol; contraindication: Nylidrin, Alvimopan, Tegaserod, Amrinone, Ozanimod, Etidocaine, Noscapine, Papaverine; off-label use: Adomiparin, Ardeparin, Heparin, bovine, Heparin, Nitroglycerin, Fondaparinux, Enoxaparin, Dalteparin; associated with: DGKZ, MIAT, MIR761, SELL, BRAP, PSMA6, TNFRSF12A, KLK1"
+      }
+    ],
+    "utama_top5": "cerebral infarction [Disease] | Atorvastatin [Drug] | Simvastatin [Drug] | Pravastatin [Drug] | Rosuvastatin [Drug]",
+    "base_keywords": [
+      "infarction",
+      "causing",
+      "sudden",
+      "weakness",
+      "right",
+      "arm",
+      "leg",
+      "slurred",
+      "speech"
+    ],
+    "base_matched": [
+      "Slurred speech",
+      "Slowed slurred speech",
+      "Fatigable weakness of speech muscles",
+      "Poor speech",
+      "Sudden death"
+    ],
+    "base_top5": "acute liver failure [Disease] | episodic ataxia [Disease] | superficial siderosis [Disease] | Huntington disease-like [Disease] | sudden cardiac arrest [Disease]"
+  },
+  {
+    "query_id": "P10",
+    "type": "polysemy",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "specificity_gap",
+    "n_candidates": 3,
+    "n_mapped": 2,
+    "cand_recall": 0,
+    "simulated": 0,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.6,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0345,
+    "utama_interpretasi": "gastric ulcer (disease)",
+    "base_interpretasi": "Abdominal pain",
+    "latency_utama_s": 4.44,
+    "latency_base_s": 0.2,
+    "llm_cached": 0,
+    "query": "Ulcer with burning upper abdominal pain that improves after eating.",
+    "gold": [
+      "peptic ulcer disease",
+      "Peptic ulcer"
+    ],
+    "candidates": [
+      {
+        "name": "gastric ulcer",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Burning upper abdominal pain that improves after eating is characteristic of gastric ulcers."
+      },
+      {
+        "name": "duodenal ulcer",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Can cause similar symptoms, but typically pain worsens after eating."
+      },
+      {
+        "name": "peptic ulcer",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "General term that includes both gastric and duodenal ulcers."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "peptic ulcer",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "General term that includes both gastric and duodenal ulcers.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "gastric ulcer",
+        "node": "gastric ulcer (disease)",
+        "label": "Disease",
+        "similarity": 0.6402,
+        "subgraph_text": "gastric ulcer (disease) (disease), phenotype present: Abnormality of the gastric mucosa, Peptic ulcer; indication: Chlorbenzoxamine, Sofalcone, Troxipide, Anisotropine methylbromide, Methantheline, Vonoprazan, Aluminum hydroxide, Roxatidine acetate; contraindication: Difenoxin, Edrophonium, Argatroban, Profenamine, Levodopa, Procyclidine, Carbidopa, Tromethamine; off-label use: Sucralfate, Dexlansoprazole, Magnesium hydroxide, Misoprostol, Pantoprazole; associated with: IAPP, VGF, ADM, CCK, PTGS1, NRG1, GHRL, EGF"
+      },
+      {
+        "candidate": "duodenal ulcer",
+        "node": "duodenal ulcer (disease)",
+        "label": "Disease",
+        "similarity": 0.6019,
+        "subgraph_text": "duodenal ulcer (disease) (disease), phenotype present: Abnormal duodenum morphology; indication: Vonoprazan, Aluminum hydroxide, Sucralfate, Dexrabeprazole, Cimetidine, Nizatidine, Ranitidine, Famotidine; contraindication: Argatroban, Levodopa, Carbidopa, Tromethamine, Aminosalicylic acid, Galantamine, Entacapone, Ketorolac; off-label use: Dexlansoprazole, Magnesium hydroxide, Misoprostol, Pantoprazole; associated with: ABO, PSCA, PLA2G4A, NOS2, TGFB1, PTGS2"
+      }
+    ],
+    "utama_top5": "gastric ulcer (disease) [Disease] | Abnormality of the gastric mucosa [Phenotype] | Peptic ulcer [Phenotype] | Omeprazole [Drug] | Sucralfate [Drug]",
+    "base_keywords": [
+      "ulcer",
+      "burning",
+      "upper",
+      "abdominal",
+      "pain",
+      "improves",
+      "eating"
+    ],
+    "base_matched": [
+      "Abdominal pain",
+      "Upper limb pain",
+      "Episodic abdominal pain",
+      "Pelger-Huet-like anomaly and episodic fever with abdominal pain",
+      "familial episodic pain syndrome with predominantly upper body involvement"
+    ],
+    "base_top5": "Abdominal pain [Phenotype] | Episodic abdominal pain [Phenotype] | pudendal neuralgia [Disease] | lactose intolerance [Disease] | carcinoid syndrome [Disease]"
+  },
+  {
+    "query_id": "S01",
+    "type": "specificity_gap",
+    "seen_in_development": true,
+    "qs_type": "specificity_gap",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 0.6,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.4,
+    "base_rr": 1.0,
+    "utama_interpretasi": "heart failure",
+    "base_interpretasi": "idiopathic pulmonary arterial hypertension",
+    "latency_utama_s": 4.0,
+    "latency_base_s": 0.35,
+    "llm_cached": 0,
+    "query": "Heart disease in an older patient with ankle swelling, breathlessness when lying flat, and waking up at night short of breath.",
+    "gold": [
+      "heart failure",
+      "congestive heart failure",
+      "Congestive heart failure"
+    ],
+    "candidates": [
+      {
+        "name": "heart failure",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "An older patient with ankle swelling and breathlessness when lying flat suggests heart failure."
+      },
+      {
+        "name": "coronary artery disease",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Possible, but less directly indicated by the symptoms described."
+      },
+      {
+        "name": "valvular heart disease",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could cause similar symptoms, but less likely without specific signs."
+      },
+      {
+        "name": "hypertensive heart disease",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Possible, but not the most fitting based on the symptoms."
+      },
+      {
+        "name": "arrhythmias",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Could cause breathlessness, but not directly indicated by the other symptoms."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "valvular heart disease",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could cause similar symptoms, but less likely without specific signs.",
+        "status": "not_found"
+      },
+      {
+        "name": "hypertensive heart disease",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Possible, but not the most fitting based on the symptoms.",
+        "status": "not_found"
+      },
+      {
+        "name": "arrhythmias",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Could cause breathlessness, but not directly indicated by the other symptoms.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "heart failure",
+        "node": "heart failure",
+        "label": "Disease",
+        "similarity": 0.5303,
+        "subgraph_text": "heart failure (disease), indication: Azosemide, Ibopamine, Ubidecarenone, Acetyldigitoxin, Enalaprilat, Levosimendan, Enalapril; contraindication: Nitrogen, Clevidipine, Nitric Oxide, Vandetanib, Ozanimod, Oxandrolone, Penbutolol, Carteolol; associated with: ELOVL6, HTR2B, NPR1, UCN2, ATP2A1, BAMBI, MSTN, ROCK2"
+      },
+      {
+        "candidate": "coronary artery disease",
+        "node": "coronary artery disease",
+        "label": "Disease",
+        "similarity": 0.3256,
+        "subgraph_text": "coronary artery disease (disease), indication: Fendiline; contraindication: Guanabenz, Hydroxyamphetamine, Levosalbutamol, Racepinephrine, Phenoxybenzamine, Benzyl alcohol, Cisapride, Oxymetazoline; associated with: MACO1, ACOT2, ADM2, APLP2, CD38, COX5B, CRK, ENSA"
+      }
+    ],
+    "utama_top5": "heart failure [Disease] | Levosimendan [Drug] | ATP2A1 [Protein] | Azosemide [Drug] | ACADS [Protein]",
+    "base_keywords": [
+      "heart",
+      "disease",
+      "older",
+      "patient",
+      "ankle",
+      "swelling",
+      "breathlessness",
+      "lying",
+      "flat",
+      "waking",
+      "night",
+      "short",
+      "breath"
+    ],
+    "base_matched": [
+      "short stature-webbed neck-heart disease syndrome",
+      "short stature-valvular heart disease-characteristic facies syndrome",
+      "heart disease",
+      "Ankle swelling",
+      "heart valve disease"
+    ],
+    "base_top5": "idiopathic pulmonary arterial hypertension [Disease] | Abnormal heart morphology [Phenotype] | short stature-webbed neck-heart disease syndrome [Disease] | Ankle swelling [Phenotype] | idiopathic hypereosinophilic syndrome [Disease]"
+  },
+  {
+    "query_id": "S02",
+    "type": "specificity_gap",
+    "seen_in_development": true,
+    "qs_type": "specificity_gap",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 2,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.2,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "coronary artery disease",
+    "base_interpretasi": "asbestosis",
+    "latency_utama_s": 3.99,
+    "latency_base_s": 0.37,
+    "llm_cached": 0,
+    "query": "Heart disease in a smoker with high cholesterol who gets chest tightness when climbing stairs that goes away with rest.",
+    "gold": [
+      "coronary artery disease",
+      "Angina pectoris"
+    ],
+    "candidates": [
+      {
+        "name": "coronary artery disease",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Chest tightness during exertion is a classic symptom of coronary artery disease."
+      },
+      {
+        "name": "heart failure",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Could cause exertional dyspnea, but less likely to present as chest tightness."
+      },
+      {
+        "name": "valvular heart disease",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Possible, but less common presentation for chest tightness."
+      },
+      {
+        "name": "arrhythmias",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Could cause symptoms, but not typically described as chest tightness."
+      },
+      {
+        "name": "congenital heart defects",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Less likely in an adult smoker with high cholesterol."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "valvular heart disease",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Possible, but less common presentation for chest tightness.",
+        "status": "not_found"
+      },
+      {
+        "name": "arrhythmias",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Could cause symptoms, but not typically described as chest tightness.",
+        "status": "not_found"
+      },
+      {
+        "name": "congenital heart defects",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Less likely in an adult smoker with high cholesterol.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "heart failure",
+        "node": "heart failure",
+        "label": "Disease",
+        "similarity": 0.4616,
+        "subgraph_text": "heart failure (disease), indication: Azosemide, Ibopamine, Ubidecarenone, Acetyldigitoxin, Enalaprilat, Levosimendan, Enalapril; contraindication: Nitrogen, Clevidipine, Nitric Oxide, Vandetanib, Ozanimod, Oxandrolone, Penbutolol, Carteolol; associated with: ELOVL6, HTR2B, NPR1, UCN2, ATP2A1, BAMBI, MSTN, ROCK2"
+      },
+      {
+        "candidate": "coronary artery disease",
+        "node": "coronary artery disease",
+        "label": "Disease",
+        "similarity": 0.4075,
+        "subgraph_text": "coronary artery disease (disease), indication: Fendiline; contraindication: Guanabenz, Hydroxyamphetamine, Levosalbutamol, Racepinephrine, Phenoxybenzamine, Benzyl alcohol, Cisapride, Oxymetazoline; associated with: MACO1, ACOT2, ADM2, APLP2, CD38, COX5B, CRK, ENSA"
+      }
+    ],
+    "utama_top5": "coronary artery disease [Disease] | Stanozolol [Drug] | Inositol nicotinate [Drug] | RXRG [Protein] | Guanabenz [Drug]",
+    "base_keywords": [
+      "heart",
+      "disease",
+      "smoker",
+      "high",
+      "cholesterol",
+      "gets",
+      "chest",
+      "tightness",
+      "climbing",
+      "stairs",
+      "goes",
+      "away",
+      "rest"
+    ],
+    "base_matched": [
+      "heart disease",
+      "Chest tightness",
+      "heart valve disease",
+      "rheumatic heart disease",
+      "congenital heart disease"
+    ],
+    "base_top5": "asbestosis [Disease] | Chest tightness [Phenotype] | tracheobronchopathia osteochondroplastica [Disease] | rheumatic heart disease [Disease] | heart disease [Disease]"
+  },
+  {
+    "query_id": "S03",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "specificity_gap",
+    "llm_type": "specificity_gap",
+    "n_candidates": 4,
+    "n_mapped": 3,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.1667,
+    "utama_interpretasi": "nephrotic syndrome",
+    "base_interpretasi": "nephropathy, progressive tubulointerstitial, with cholestatic liver disease",
+    "latency_utama_s": 4.61,
+    "latency_base_s": 0.27,
+    "llm_cached": 0,
+    "query": "Kidney disease with frothy urine, generalized swelling, and very low serum albumin.",
+    "gold": [
+      "nephrotic syndrome",
+      "Nephrotic syndrome"
+    ],
+    "candidates": [
+      {
+        "name": "nephrotic syndrome",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Frothy urine, generalized swelling, and low serum albumin are classic signs of nephrotic syndrome."
+      },
+      {
+        "name": "chronic kidney disease",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "While it can cause swelling, it does not typically present with frothy urine or very low serum albumin."
+      },
+      {
+        "name": "acute kidney injury",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "It may cause swelling but is less likely to present with frothy urine and low serum albumin."
+      },
+      {
+        "name": "glomerulonephritis",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "It can cause swelling and changes in urine but is less specific to the symptoms described."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "acute kidney injury",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "It may cause swelling but is less likely to present with frothy urine and low serum albumin.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "glomerulonephritis",
+        "node": "glomerulonephritis",
+        "label": "Disease",
+        "similarity": 0.6494,
+        "subgraph_text": "glomerulonephritis (disease), phenotype present: Abnormal renal glomerulus morphology, Minimal change glomerulonephritis, Membranous nephropathy, Nephritis; contraindication: Inotersen, Sulfamethizole, Sulfisoxazole, Methenamine, Oxytetracycline, Phenazopyridine, Butabarbital, Tetracycline; associated with: CCL1, ADM, CXCR3, JUND, NPHS1, CCL4, CCL7, CFD"
+      },
+      {
+        "candidate": "chronic kidney disease",
+        "node": "chronic kidney disease",
+        "label": "Disease",
+        "similarity": 0.5194,
+        "subgraph_text": "chronic kidney disease (disease), contraindication: Sucralfate, Alvimopan, Exenatide, Alanine, Histidine, Isoleucine, L-Lysine, Leucine; associated with: GUCA2B, ADIPOR1, AOC3, DNAJB11, ABCG1, MSR1, ACAT1, IL19"
+      },
+      {
+        "candidate": "nephrotic syndrome",
+        "node": "nephrotic syndrome",
+        "label": "Disease",
+        "similarity": 0.5108,
+        "subgraph_text": "nephrotic syndrome (disease), indication: Methylprednisolone hemisuccinate, Hydrocortisone acetate, Cortisone acetate, Methylprednisolone, Prednisone, Triamcinolone, Hydrocortisone, Prednisolone; contraindication: Stanozolol, Tiopronin, Oxandrolone, Nandrolone, Oxymetholone, Stanolone, Dicoumarol, Chlorambucil"
+      }
+    ],
+    "utama_top5": "nephrotic syndrome [Disease] | Methylprednisolone hemisuccinate [Drug] | Methylprednisolone [Drug] | Dexamethasone [Drug] | Prednisolone [Drug]",
+    "base_keywords": [
+      "kidney",
+      "disease",
+      "frothy",
+      "urine",
+      "generalized",
+      "swelling",
+      "low",
+      "serum",
+      "albumin"
+    ],
+    "base_matched": [
+      "kidney disease",
+      "Low serum calcitriol",
+      "cystic kidney disease",
+      "Low serum calcifediol",
+      "Chronic kidney disease"
+    ],
+    "base_top5": "nephropathy, progressive tubulointerstitial, with cholestatic liver disease [Disease] | kidney disease [Disease] | hypotrichosis-lymphedema-telangiectasia-renal defect syndrome [Disease] | hereditary renal hypouricemia [Disease] | cystic kidney disease [Disease]"
+  },
+  {
+    "query_id": "S04",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "none",
+    "n_candidates": 4,
+    "n_mapped": 1,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 0.4,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0125,
+    "utama_interpretasi": "iron deficiency anemia",
+    "base_interpretasi": "genetic hyperferritinemia without iron overload",
+    "latency_utama_s": 3.11,
+    "latency_base_s": 0.24,
+    "llm_cached": 0,
+    "query": "Anemia in a woman with heavy menstrual periods, fatigue, and spoon-shaped nails.",
+    "gold": [
+      "iron deficiency anemia",
+      "Iron deficiency anemia"
+    ],
+    "candidates": [
+      {
+        "name": "Iron deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Heavy menstrual periods and fatigue suggest iron deficiency."
+      },
+      {
+        "name": "Vitamin B12 deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Possible but less likely without neurological symptoms."
+      },
+      {
+        "name": "Folate deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Less likely without dietary history."
+      },
+      {
+        "name": "Anemia of chronic disease",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Possible but not indicated by the symptoms described."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "Vitamin B12 deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Possible but less likely without neurological symptoms.",
+        "status": "not_found"
+      },
+      {
+        "name": "Folate deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Less likely without dietary history.",
+        "status": "not_found"
+      },
+      {
+        "name": "Anemia of chronic disease",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Possible but not indicated by the symptoms described.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Iron deficiency anemia",
+        "node": "iron deficiency anemia",
+        "label": "Disease",
+        "similarity": 0.5897,
+        "subgraph_text": "iron deficiency anemia (disease), indication: Ferumoxytol, Ferric maltol, Ferric oxide, Ferrous gluconate, Iron, Hematin, Succinic acid, Ferrous sulfate anhydrous; contraindication: Triethylenetetramine, Penicillamine; associated with: TMPRSS6, SLC11A2, TFRC, SOD1"
+      }
+    ],
+    "utama_top5": "iron deficiency anemia [Disease] | SOD1 [Protein] | SLC11A2 [Protein] | Folic acid [Drug] | TFRC [Protein]",
+    "base_keywords": [
+      "anemia",
+      "woman",
+      "heavy",
+      "menstrual",
+      "periods",
+      "fatigue",
+      "spoon",
+      "shaped",
+      "nails"
+    ],
+    "base_matched": [
+      "Fatigue",
+      "Yellow nails",
+      "Beaked nails",
+      "Fragile nails",
+      "Fanconi anemia"
+    ],
+    "base_top5": "genetic hyperferritinemia without iron overload [Disease] | mixed-type autoimmune hemolytic anemia [Disease] | Abnormality of the uterus [Phenotype] | alpha-thalassemia-myelodysplastic syndrome [Disease] | Fanconi anemia [Disease]"
+  },
+  {
+    "query_id": "S05",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 5,
+    "cand_recall": 0,
+    "simulated": 1,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.4,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.4,
+    "base_rr": 0.5,
+    "utama_interpretasi": "sickle cell anemia",
+    "base_interpretasi": "Coombs-positive hemolytic anemia",
+    "latency_utama_s": 4.73,
+    "latency_base_s": 0.28,
+    "llm_cached": 0,
+    "query": "Anemia with yellow eyes, dark urine, an enlarged spleen, and a positive direct Coombs test.",
+    "gold": [
+      "autoimmune hemolytic anemia",
+      "Autoimmune hemolytic anemia"
+    ],
+    "candidates": [
+      {
+        "name": "hemolytic anemia",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Symptoms like jaundice (yellow eyes), dark urine, and splenomegaly suggest hemolytic anemia."
+      },
+      {
+        "name": "sickle cell anemia",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Could cause splenomegaly, but less likely without pain crises mentioned."
+      },
+      {
+        "name": "iron deficiency anemia",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Does not typically present with jaundice or dark urine."
+      },
+      {
+        "name": "aplastic anemia",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Could cause anemia but not the specific symptoms described."
+      },
+      {
+        "name": "thalassemia",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Less likely given the acute presentation of symptoms."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "sickle cell anemia",
+        "node": "sickle cell anemia",
+        "label": "Disease",
+        "similarity": 0.5167,
+        "subgraph_text": "sickle cell anemia (disease), phenotype present: Increased red cell sickling tendency, Pigment gallstones, Chronic hemolytic anemia, Persistence of hemoglobin F, Unconjugated hyperbilirubinemia, Abnormality of the vasculature, Increased mean corpuscular volume, Abnormality of the spleen; indication: Voxelotor, Hydroxyurea; contraindication: Beta carotene, Quercetin, Rutin, Pantothenic acid, Iocetamic acid, Iopanoic acid, Iopodic acid, Succinic acid; off-label use: Nandrolone, Stanolone; associated with: DHODH, NPPB, CAD, CACNA1C, VCAM1, HBB, UMPS, HP"
+      },
+      {
+        "candidate": "hemolytic anemia",
+        "node": "hemolytic anemia",
+        "label": "Disease",
+        "similarity": 0.5056,
+        "subgraph_text": "hemolytic anemia (disease), contraindication: Metaxalone, Ferrous gluconate, Iron, Hematin, Succinic acid, Icosapent, Primaquine, Ferrous sulfate anhydrous; associated with: ITPA, EIF2AK1, GPI, SPTB, GSR, GCLC, SLC4A1, G6PD"
+      },
+      {
+        "candidate": "thalassemia",
+        "node": "thalassemia",
+        "label": "Disease",
+        "similarity": 0.4998,
+        "subgraph_text": "thalassemia (disease), contraindication: Ribavirin; associated with: PKLR, HBB-LCR, DHODH, TFR2, CACNA1H, CAD, HBA2, LCN2"
+      },
+      {
+        "candidate": "iron deficiency anemia",
+        "node": "iron deficiency anemia",
+        "label": "Disease",
+        "similarity": 0.4896,
+        "subgraph_text": "iron deficiency anemia (disease), indication: Ferumoxytol, Ferric maltol, Ferric oxide, Ferrous gluconate, Iron, Hematin, Succinic acid, Ferrous sulfate anhydrous; contraindication: Triethylenetetramine, Penicillamine; associated with: TMPRSS6, SLC11A2, TFRC, SOD1"
+      },
+      {
+        "candidate": "aplastic anemia",
+        "node": "aplastic anemia",
+        "label": "Disease",
+        "similarity": 0.4793,
+        "subgraph_text": "aplastic anemia (disease), indication: Oxymetholone, Romiplostim; contraindication: Albendazole, Mycophenolate mofetil, Tiopronin, Phenol, Ribavirin, Sulfisoxazole, Probenecid, Dactinomycin; off-label use: Stanozolol; associated with: TERC, PRF1, SBDS, NBN, CSF2, IFNG, TERT, CSF3"
+      }
+    ],
+    "utama_top5": "Hemolytic anemia [Phenotype] | Jaundice [Phenotype] | Abnormality of the spleen [Phenotype] | Chronic hemolytic anemia [Phenotype] | Elevated serum creatinine [Phenotype]",
+    "base_keywords": [
+      "anemia",
+      "yellow",
+      "eyes",
+      "dark",
+      "urine",
+      "enlarged",
+      "spleen",
+      "positive",
+      "direct",
+      "coombs",
+      "test"
+    ],
+    "base_matched": [
+      "Dark yellow urine",
+      "Coombs-positive hemolytic anemia",
+      "Dark urine",
+      "Positive ferric chloride test",
+      "Positive regitine blocking test"
+    ],
+    "base_top5": "Coombs-positive hemolytic anemia [Phenotype] | immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome [Disease] | combined immunodeficiency due to OX40 deficiency [Disease] | Benzylpenicillin [Drug] | autoimmune lymphoproliferative syndrome [Disease]"
+  },
+  {
+    "query_id": "S06",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "polysemy",
+    "n_candidates": 3,
+    "n_mapped": 3,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.8,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "gout",
+    "base_interpretasi": "acatalasia",
+    "latency_utama_s": 4.29,
+    "latency_base_s": 0.27,
+    "llm_cached": 0,
+    "query": "Arthritis with sudden severe pain, redness, and swelling of the big toe during the night after heavy drinking.",
+    "gold": [
+      "gout",
+      "Gout"
+    ],
+    "candidates": [
+      {
+        "name": "gout",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "Sudden severe pain, redness, and swelling of the big toe after heavy drinking is characteristic of gout."
+      },
+      {
+        "name": "rheumatoid arthritis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Typically involves multiple joints and is less likely to present this way."
+      },
+      {
+        "name": "osteoarthritis",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Usually presents with chronic pain rather than sudden severe symptoms."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "rheumatoid arthritis",
+        "node": "rheumatoid arthritis",
+        "label": "Disease",
+        "similarity": 0.5054,
+        "subgraph_text": "rheumatoid arthritis (disease), phenotype present: Anti-citrullinated protein antibody positivity, Digital flexor tenosynovitis, Interphalangeal joint erosions, Swan neck-like deformities of the fingers, Rheumatoid factor positive, Polyarticular arthritis, Rheumatoid arthritis, Elevated C-reactive protein level; indication: Alclofenac, Benoxaprofen, Flunoxaprofen, Iguratimod, Loxoprofen, Tenidap, Tofacitinib, Upadacitinib; contraindication: Bromfenac, Zinc gluconate, Nepafenac, Tromethamine, Ascorbic acid, Ketorolac; off-label use: Sulfadiazine, Minocycline, Valdecoxib; associated with: B3GNT9, BAIAP2L1, CCL21, CD244, CLEC12A, DDX6, GIN1, GPRC5A"
+      },
+      {
+        "candidate": "osteoarthritis",
+        "node": "osteoarthritis",
+        "label": "Disease",
+        "similarity": 0.4137,
+        "subgraph_text": "osteoarthritis (disease), phenotype present: Cervical osteoarthritis, Osteoarthritis of the elbow, Knee osteoarthritis, Osteoarthritis of the small joints of the hand, Sacroiliac arthritis, Premature osteoarthritis, Hip osteoarthritis, Arthritis; indication: Etofenamate, Felbinac, Imrecoxib, Lumiracoxib, Oxaceprol, Polmacoxib, Proglumetacin, Aceclofenac; off-label use: Valdecoxib; associated with: CHADL, LTBP1, WWP2, ACO1, AK4, DAPP1, EDIL3, ESD"
+      },
+      {
+        "candidate": "gout",
+        "node": "gout",
+        "label": "Disease",
+        "similarity": 0.4112,
+        "subgraph_text": "gout (disease), indication: Cinchophen, Pegloticase, Benzbromarone, Topiroxostat, Azapropazone, Canakinumab, Probenecid, Colchicine; contraindication: Guanethidine, Deserpidine, Bismuth subsalicylate, Dichlorophen, Candesartan cilexetil, Inositol nicotinate, Inositol, Nicotinamide; off-label use: Phenylbutazone, Fenoprofen, Ketoprofen, Etodolac; associated with: CARD8, ALDH16A1, ALPK1, SLC2A9, CD14, XDH, ABCG2, IL1RN"
+      }
+    ],
+    "utama_top5": "gout [Disease] | Naproxen [Drug] | Azapropazone [Drug] | ALDH16A1 [Protein] | Dexamethasone [Drug]",
+    "base_keywords": [
+      "arthritis",
+      "sudden",
+      "severe",
+      "pain",
+      "redness",
+      "swelling",
+      "big",
+      "toe",
+      "night",
+      "heavy",
+      "drinking"
+    ],
+    "base_matched": [
+      "Paresis of extensor muscles of the big toe",
+      "congenital insensitivity to pain with severe intellectual disability",
+      "Pain",
+      "Long toe",
+      "Ear pain"
+    ],
+    "base_top5": "acatalasia [Disease] | thromboangiitis obliterans [Disease] | familial episodic pain syndrome with predominantly lower limb involvement [Disease] | O'Sullivan-McLeod syndrome [Disease] | infantile liver failure [Disease]"
+  },
+  {
+    "query_id": "S07",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "specificity_gap",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 5,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.2,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "chronic obstructive pulmonary disease",
+    "base_interpretasi": "lung disease",
+    "latency_utama_s": 5.63,
+    "latency_base_s": 0.31,
+    "llm_cached": 0,
+    "query": "Lung disease in a long-term smoker with a chronic productive cough and slowly worsening breathlessness.",
+    "gold": [
+      "chronic obstructive pulmonary disease"
+    ],
+    "candidates": [
+      {
+        "name": "chronic obstructive pulmonary disease",
+        "entity_type": "disease",
+        "confidence": 0.85,
+        "reason": "Long-term smoking and chronic productive cough are classic signs of COPD."
+      },
+      {
+        "name": "lung cancer",
+        "entity_type": "disease",
+        "confidence": 0.1,
+        "reason": "Possible but less likely without mention of weight loss or hemoptysis."
+      },
+      {
+        "name": "pulmonary fibrosis",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could cause breathlessness but less common in smokers."
+      },
+      {
+        "name": "asthma",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Chronic cough could suggest asthma, but less likely in a long-term smoker."
+      },
+      {
+        "name": "pneumonia",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Acute condition, unlikely given the chronic nature of symptoms."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "pulmonary fibrosis",
+        "node": "pulmonary fibrosis",
+        "label": "Disease",
+        "similarity": 0.5244,
+        "subgraph_text": "pulmonary fibrosis (disease), indication: Prednisolone; contraindication: Nitrofural, Aurothioglucose, Lomustine, Gefitinib, Auranofin, Cabergoline, Nitrofurantoin, Doxapram; associated with: CMA1, MIR101-1, SKIL, AP3B1, MIR326, HPS1, MIR378A, MIR140"
+      },
+      {
+        "candidate": "chronic obstructive pulmonary disease",
+        "node": "chronic obstructive pulmonary disease",
+        "label": "Disease",
+        "similarity": 0.4851,
+        "subgraph_text": "chronic obstructive pulmonary disease (disease), indication: Almitrine, Olodaterol, Oxitropium, Revefenacin, Arformoterol, Vilanterol, Ipratropium; contraindication: Benzyl alcohol, Butobarbital, Methylphenobarbital, Tramazoline, Methohexital, Iloprost, Zanamivir, Metipranolol; off-label use: Salbutamol, Cortisone acetate, Methylprednisolone, Prednisone, Triamcinolone, Prednisolone, Betamethasone; associated with: EEFSEC, MTCL1, CD8A, MIR218-2, RAPGEF3, SFTPD, FAM13A, FOXO3"
+      },
+      {
+        "candidate": "lung cancer",
+        "node": "lung cancer",
+        "label": "Disease",
+        "similarity": 0.4658,
+        "subgraph_text": "lung cancer (disease), phenotype present: Alveolar cell carcinoma, Lung adenocarcinoma, Somatic mutation, Autosomal dominant inheritance; indication: Alectinib, Brigatinib, Ceritinib, Crizotinib, Icotinib, Lonidamine, Lorlatinib, Necitumumab; off-label use: Mitomycin, Coenzyme M, Vinblastine, Irinotecan, Carboplatin, Etoposide, Ifosfamide; associated with: ANKRD18A, ARHGAP35, ATG101, AVEN, AVPI1, BZW2, CA12, CALML3"
+      },
+      {
+        "candidate": "asthma",
+        "node": "asthma",
+        "label": "Disease",
+        "similarity": 0.4458,
+        "subgraph_text": "asthma (disease), phenotype present: Exercise-induced asthma, Aspirin-induced asthma, Status asthmaticus, Immunologic hypersensitivity, Abnormal respiratory system physiology; indication: Ibudilast, Reproterol, Omalizumab, Ozagrel, Tulobuterol, Pranlukast, Acefylline, Bitolterol; contraindication: Ambenonium, Iocetamic acid, Iopanoic acid, Iopodic acid, Cysteine, Tacrine, Physostigmine, Methadyl acetate; off-label use: Oleandomycin, Troleandomycin, Ipratropium, Epinephrine, Guaifenesin; associated with: CDHR3, MUC7, PTGDR2, RNASE3, SPRR2B, ADCYAP1R1, IL1RL1, HLA-G"
+      },
+      {
+        "candidate": "pneumonia",
+        "node": "pneumonia",
+        "label": "Disease",
+        "similarity": 0.4424,
+        "subgraph_text": "pneumonia (disease), indication: Cefmetazole, Cefalotin, Cefonicid, Loracarbef, Cefapirin, Dirithromycin, Cefradine, Cefamandole; contraindication: Enfuvirtide, Secobarbital, Amobarbital, Pentobarbital, Bortezomib; associated with: ABCF1, CXCL5, IL5RA, PF4, CCL19, CCR9, CCL17, IL1R1"
+      }
+    ],
+    "utama_top5": "chronic obstructive pulmonary disease [Disease] | Methohexital [Drug] | Trihexyphenidyl [Drug] | Butabarbital [Drug] | Butalbital [Drug]",
+    "base_keywords": [
+      "lung",
+      "disease",
+      "long",
+      "term",
+      "smoker",
+      "chronic",
+      "productive",
+      "cough",
+      "slowly",
+      "worsening",
+      "breathlessness"
+    ],
+    "base_matched": [
+      "Chronic lung disease",
+      "lung disease",
+      "Productive cough",
+      "farmer's lung disease",
+      "Chronic kidney disease"
+    ],
+    "base_top5": "lung disease [Disease] | idiopathic bronchiectasis [Disease] | Chronic lung disease [Phenotype] | bronchopulmonary dysplasia [Disease] | immunodeficiency [Disease]"
+  },
+  {
+    "query_id": "S08",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "specificity_gap",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 4,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 1,
+    "utama_p5": 1.0,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "Wilson disease",
+    "base_interpretasi": "liver disease",
+    "latency_utama_s": 4.61,
+    "latency_base_s": 0.34,
+    "llm_cached": 0,
+    "query": "Liver disease in a young adult with a hand tremor, personality changes, and brownish rings around the iris.",
+    "gold": [
+      "Wilson disease"
+    ],
+    "candidates": [
+      {
+        "name": "Wilson's disease",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "Hand tremor, personality changes, and Kayser-Fleischer rings are classic signs."
+      },
+      {
+        "name": "hepatitis",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Could cause liver dysfunction but does not typically present with these specific symptoms."
+      },
+      {
+        "name": "cirrhosis",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Can cause liver dysfunction but less likely to present with tremors and personality changes."
+      },
+      {
+        "name": "fatty liver disease",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Common but does not typically present with neurological symptoms."
+      },
+      {
+        "name": "liver cancer",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Possible but less likely to present with these specific symptoms."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "cirrhosis",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Can cause liver dysfunction but less likely to present with tremors and personality changes.",
+        "status": "type_mismatch"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "Wilson's disease",
+        "node": "Wilson disease",
+        "label": "Disease",
+        "similarity": 0.4858,
+        "subgraph_text": "Wilson disease (disease), phenotype present: Atypical or prolonged hepatitis, Kayser-Fleischer ring, High nonceruloplasmin-bound serum copper, Mixed demyelinating and axonal polyneuropathy, Poor motor coordination, Acute hepatitis, Hypersexuality, Abnormality of the menstrual cycle; indication: Zinc acetate, Triethylenetetramine, Penicillamine; contraindication: Cupric Chloride, Beta carotene, Ferric maltol, Quercetin, Rutin, Pantothenic acid, Zinc chloride, Ferrous gluconate; associated with: ANKS1B, NDUFB7, PPP3CB, SDHAF2, HJV, AHCY, AKR1D1, ASMT"
+      },
+      {
+        "candidate": "liver cancer",
+        "node": "liver cancer",
+        "label": "Disease",
+        "similarity": 0.42,
+        "subgraph_text": "liver cancer (disease), indication: Regorafenib, Ramucirumab, Floxuridine, Sorafenib; contraindication: Hydroxyprogesterone caproate, Oxandrolone, Stanolone, Ethynodiol diacetate, Mestranol, Norelgestromin, Diethylstilbestrol, Ferrous fumarate; off-label use: Doxorubicin; associated with: ACOT1, ANXA7, BTBD11, CGREF1, DACT2, DCD, HEBP2, HERC3"
+      },
+      {
+        "candidate": "fatty liver disease",
+        "node": "fatty liver disease",
+        "label": "Disease",
+        "similarity": 0.4157,
+        "subgraph_text": "fatty liver disease (disease), contraindication: Rilpivirine, Secretin human, Tenofovir, Entecavir, Adefovir dipivoxil, Telbivudine, Stavudine, Abacavir; associated with: HAS3, MIR139, MIR197, MIR219A1, MIR449C, MIR542, ADH1A, CNDP2"
+      },
+      {
+        "candidate": "hepatitis",
+        "node": "hepatitis",
+        "label": "Disease",
+        "similarity": 0.35,
+        "subgraph_text": "hepatitis (disease), contraindication: Metaxalone, Edetic acid, Nitrofural, Aurothioglucose, Eltrombopag, Pyrazinamide, Isoniazid, Pyridoxine; off-label use: Cortisone acetate, Methylprednisolone, Triamcinolone, Prednisolone, Betamethasone; associated with: CCS, CAST, PANX1, ATOX1, COMMD1, COX17, GFER, SCO1"
+      }
+    ],
+    "utama_top5": "Cirrhosis [Phenotype] | Atypical or prolonged hepatitis [Phenotype] | Acute hepatitis [Phenotype] | Acute hepatic failure [Phenotype] | Hepatic steatosis [Phenotype]",
+    "base_keywords": [
+      "liver",
+      "disease",
+      "young",
+      "adult",
+      "hand",
+      "tremor",
+      "personality",
+      "changes",
+      "brownish",
+      "rings",
+      "around",
+      "iris"
+    ],
+    "base_matched": [
+      "Hand tremor",
+      "iris disease",
+      "liver disease",
+      "Young adult onset",
+      "fatty liver disease"
+    ],
+    "base_top5": "liver disease [Disease] | iris disease [Disease] | fatty liver disease [Disease] | progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome [Disease] | neurodegeneration with brain iron accumulation [Disease]"
+  },
+  {
+    "query_id": "S09",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "none",
+    "llm_type": "specificity_gap",
+    "n_candidates": 5,
+    "n_mapped": 5,
+    "cand_recall": 1,
+    "simulated": 1,
+    "utama_da": 1,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.2,
+    "utama_rr": 1.0,
+    "base_da": 0,
+    "base_p5": 0.0,
+    "base_rr": 0.0,
+    "utama_interpretasi": "breast cancer",
+    "base_interpretasi": "skin cancer",
+    "latency_utama_s": 4.69,
+    "latency_base_s": 0.25,
+    "llm_cached": 0,
+    "query": "Cancer in a woman who found a painless hard lump with skin dimpling and nipple retraction.",
+    "gold": [
+      "breast cancer"
+    ],
+    "candidates": [
+      {
+        "name": "breast cancer",
+        "entity_type": "disease",
+        "confidence": 0.9,
+        "reason": "The presence of a painless hard lump with skin dimpling and nipple retraction strongly suggests breast cancer."
+      },
+      {
+        "name": "lung cancer",
+        "entity_type": "disease",
+        "confidence": 0.05,
+        "reason": "Possible but less likely given the specific symptoms described."
+      },
+      {
+        "name": "ovarian cancer",
+        "entity_type": "disease",
+        "confidence": 0.03,
+        "reason": "Could be considered, but does not match the symptoms presented."
+      },
+      {
+        "name": "lymphoma",
+        "entity_type": "disease",
+        "confidence": 0.02,
+        "reason": "Possible but does not align with the specific findings."
+      },
+      {
+        "name": "sarcoma",
+        "entity_type": "disease",
+        "confidence": 0.01,
+        "reason": "Very unlikely given the context of the symptoms."
+      }
+    ],
+    "unmapped": [],
+    "scored": [
+      {
+        "candidate": "ovarian cancer",
+        "node": "ovarian cancer",
+        "label": "Disease",
+        "similarity": 0.3687,
+        "subgraph_text": "ovarian cancer (disease), phenotype present: Ovarian papillary adenocarcinoma, Breast carcinoma, Somatic mutation, Abnormality of metabolism/homeostasis, Autosomal dominant inheritance; indication: Rucaparib, Belotecan, Olaparib, Tretamine, Altretamine, Trabectedin, Topotecan, Cisplatin; contraindication: Chlorotrianisene, Quinestrol, Norelgestromin, Dienogest, Diethylstilbestrol, Levomefolic acid, Drospirenone, Testosterone cypionate; off-label use: Megestrol acetate, Anastrozole, Letrozole, Tamoxifen, Etoposide, Leuprolide, Docetaxel, Capecitabine; associated with: BABAM1, CHMP4C, DESI2, DPH1, GPR150, LRRC46, MUC16, PLEKHF1"
+      },
+      {
+        "candidate": "breast cancer",
+        "node": "breast cancer",
+        "label": "Disease",
+        "similarity": 0.3558,
+        "subgraph_text": "breast cancer (disease), indication: Drostanolone propionate, Bevacizumab; associated with: ABCB8, ABHD12B, ABRAXAS1, ACCS, ADAMTS19, ADHFE1, AGAP2, AHSA2P"
+      },
+      {
+        "candidate": "sarcoma",
+        "node": "sarcoma",
+        "label": "Disease",
+        "similarity": 0.3461,
+        "subgraph_text": "sarcoma (disease), indication: Tazemetostat, Olaratumab, Tasonermin, Pazopanib; associated with: MAML3, MCL1, PRAME, ZNF667-AS1, PAX3, SMARCA4, SOX2, CSF2"
+      },
+      {
+        "candidate": "lymphoma",
+        "node": "lymphoma",
+        "label": "Disease",
+        "similarity": 0.342,
+        "subgraph_text": "lymphoma (disease), indication: Rituximab, Uracil mustard, Mechlorethamine, Bleomycin, Vinblastine, Thiotepa, Cyclophosphamide, Vincristine; contraindication: Mycophenolate mofetil, Phenol, Azathioprine, Cyclosporine, Sirolimus, Everolimus, Tacrolimus; associated with: PAX5, RAD54B, BCL6, CD79A, CD79B, FPGS, IKBKB, PRF1"
+      },
+      {
+        "candidate": "lung cancer",
+        "node": "lung cancer",
+        "label": "Disease",
+        "similarity": 0.2672,
+        "subgraph_text": "lung cancer (disease), phenotype present: Alveolar cell carcinoma, Lung adenocarcinoma, Somatic mutation, Autosomal dominant inheritance; indication: Alectinib, Brigatinib, Ceritinib, Crizotinib, Icotinib, Lonidamine, Lorlatinib, Necitumumab; off-label use: Mitomycin, Coenzyme M, Vinblastine, Irinotecan, Carboplatin, Etoposide, Ifosfamide; associated with: ANKRD18A, ARHGAP35, ATG101, AVEN, AVPI1, BZW2, CA12, CALML3"
+      }
+    ],
+    "utama_top5": "breast cancer [Disease] | CATSPERE [Protein] | ABHD12B [Protein] | ABRAXAS1 [Protein] | ANKRD30A [Protein]",
+    "base_keywords": [
+      "cancer",
+      "woman",
+      "found",
+      "painless",
+      "hard",
+      "lump",
+      "skin",
+      "dimpling",
+      "nipple",
+      "retraction"
+    ],
+    "base_matched": [
+      "skin cancer",
+      "Merkel cell skin cancer",
+      "Parana hard-skin syndrome",
+      "cancer",
+      "Dry skin"
+    ],
+    "base_top5": "skin cancer [Disease] | cutaneous neuroendocrine carcinoma [Disease] | Merkel cell skin cancer [Phenotype] | cancer [Disease] | LORICRIN [Protein]"
+  },
+  {
+    "query_id": "S10",
+    "type": "specificity_gap",
+    "seen_in_development": false,
+    "qs_type": "polysemy",
+    "llm_type": "polysemy",
+    "n_candidates": 2,
+    "n_mapped": 1,
+    "cand_recall": 0,
+    "simulated": 1,
+    "utama_da": 0,
+    "utama_da_tanpa_simulasi": 0,
+    "utama_p5": 0.0,
+    "utama_rr": 0.0,
+    "base_da": 0,
+    "base_p5": 0.2,
+    "base_rr": 0.25,
+    "utama_interpretasi": "Photophobia",
+    "base_interpretasi": "migraine, familial typical, susceptibility to, 2",
+    "latency_utama_s": 3.4,
+    "latency_base_s": 0.4,
+    "llm_cached": 0,
+    "query": "Headache on one side, throbbing, with nausea and sensitivity to light, preceded by flashing zigzag lines in the vision.",
+    "gold": [
+      "migraine disorder",
+      "Migraine",
+      "migraine with aura"
+    ],
+    "candidates": [
+      {
+        "name": "photophobia",
+        "entity_type": "phenotype",
+        "confidence": 0.9,
+        "reason": "The context of headache with nausea and visual disturbances strongly suggests sensitivity to light."
+      },
+      {
+        "name": "heightened sensitivity to stimuli",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "While possible, it is too broad and not specifically indicated in the context."
+      }
+    ],
+    "unmapped": [
+      {
+        "name": "heightened sensitivity to stimuli",
+        "entity_type": "phenotype",
+        "confidence": 0.05,
+        "reason": "While possible, it is too broad and not specifically indicated in the context.",
+        "status": "not_found"
+      }
+    ],
+    "scored": [
+      {
+        "candidate": "photophobia",
+        "node": "Photophobia",
+        "label": "Phenotype",
+        "similarity": 0.42,
+        "subgraph_text": "Photophobia (phenotype), phenotype present: oligocone trichromacy, red skin pigment anomaly of new guinea, bradyopsia, microtia-eye coloboma-imperforation of the nasolacrimal duct syndrome, fleck corneal dystrophy, hereditary benign intraepithelial dyskeratosis, migraine, familial typical, susceptibility to, 2, retinal dystrophy with or without macular staphyloma; side effect: Suprofen, Loteprednol, Tafluprost, Cinoxacin, Bromfenac, Rimexolone, Unoprostone, Norepinephrine"
+      }
+    ],
+    "utama_top5": "migraine, familial typical, susceptibility to, 2 [Disease] | bilateral acute depigmentation of the iris [Disease] | Cinoxacin [Drug] | Unoprostone [Drug] | Glycopyrronium [Drug]",
+    "base_keywords": [
+      "headache",
+      "one",
+      "side",
+      "throbbing",
+      "nausea",
+      "sensitivity",
+      "light",
+      "preceded",
+      "flashing",
+      "zigzag",
+      "lines",
+      "vision"
+    ],
+    "base_matched": [
+      "Increased cellular sensitivity to UV light",
+      "Nausea",
+      "Headache",
+      "Blurred vision",
+      "vision disorder"
+    ],
+    "base_top5": "migraine, familial typical, susceptibility to, 2 [Disease] | L1 syndrome [Disease] | hypnic headache (disease) [Disease] | familial hemiplegic migraine [Disease] | benign occipital epilepsy [Disease]"
+  }
+]

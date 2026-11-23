@@ -1,0 +1,75 @@
+BASELINE EMBEDDING (kueri -> nama node) — 2026-11-23 15:50
+Node kandidat: 29757 | node awal per kueri: 5
+  A01 DA=0 P@5=0.8 RR=1.00 | Methylprednisolone | seed1: progressive multiple sclerosis
+  A02 DA=0 P@5=0.0 RR=0.00 | Arrhythmia | seed1: rheumatic fever
+  A03 DA=0 P@5=0.0 RR=0.01 | Marburg hemorrhagic fever | seed1: myocarditis
+  A04 DA=0 P@5=0.4 RR=0.50 | Abnormally loud pulmonic component of the second heart sound | seed1: Abnormally loud pulmonic component of the second heart sound
+  A05 DA=0 P@5=0.0 RR=0.08 | Lacosamide | seed1: Ademetionine
+  A06 DA=0 P@5=0.8 RR=1.00 | Autonomic bladder dysfunction | seed1: multiple system atrophy, parkinsonian type
+  A07 DA=0 P@5=0.0 RR=0.11 | lateral sclerosis | seed1: periodic paralysis with later-onset distal motor neuropathy
+  A08 DA=0 P@5=0.0 RR=0.04 | incessant infant ventricular tachycardia | seed1: incessant infant ventricular tachycardia
+  A09 DA=0 P@5=0.0 RR=0.00 | unclassified acute myeloid leukemia | seed1: unclassified acute myeloid leukemia
+  A10 DA=0 P@5=0.4 RR=0.50 | acute articular rheumatism | seed1: acute articular rheumatism
+  P01 DA=0 P@5=0.2 RR=0.50 | Decreased pulmonary function | seed1: morphine dependence
+  P02 DA=1 P@5=0.4 RR=1.00 | major depressive disorder | seed1: major depressive disorder
+  P03 DA=0 P@5=0.0 RR=0.04 | Abnormal EKG | seed1: Abnormal EKG
+  P04 DA=1 P@5=0.2 RR=1.00 | common cold | seed1: common cold
+  P05 DA=0 P@5=0.2 RR=0.25 | Shivering | seed1: Shivering
+  P06 DA=0 P@5=0.0 RR=0.14 | hypoinsulinemic hypoglycemia and body hemihypertrophy | seed1: Hypoglycemic encephalopathy
+  P07 DA=0 P@5=0.0 RR=0.10 | insect Stings, hypersensitivity to | seed1: insect Stings, hypersensitivity to
+  P08 DA=0 P@5=0.0 RR=0.02 | Bacteremia | seed1: acute diarrhea
+  P09 DA=1 P@5=0.2 RR=1.00 | cerebral infarction | seed1: cerebral infarction
+  P10 DA=0 P@5=0.2 RR=0.20 | esophageal ulcer | seed1: esophageal ulcer
+  S01 DA=0 P@5=0.2 RR=0.33 | Abnormal heart morphology | seed1: short stature-webbed neck-heart disease syndrome
+  S02 DA=0 P@5=0.0 RR=0.02 | cholesterol pneumonia | seed1: cholesterol pneumonia
+  S03 DA=0 P@5=0.0 RR=0.04 | proteinuria, chronic benign | seed1: Moderate albuminuria
+  S04 DA=0 P@5=0.6 RR=0.50 | anemia, hypochromic microcytic with iron overload | seed1: anemia, hypochromic microcytic with iron overload
+  S05 DA=0 P@5=0.2 RR=0.50 | Coombs-positive hemolytic anemia | seed1: Coombs-positive hemolytic anemia
+  S06 DA=0 P@5=0.0 RR=0.02 | bacterial arthritis | seed1: bacterial arthritis
+  S07 DA=0 P@5=0.0 RR=0.01 | lung disease | seed1: lung disease
+  S08 DA=0 P@5=0.0 RR=0.00 | cirrhosis of liver | seed1: cirrhosis of liver
+  S09 DA=0 P@5=0.0 RR=0.02 | breast neoplasm | seed1: breast neoplasm
+  S10 DA=0 P@5=0.4 RR=0.25 | hypnic headache (disease) | seed1: hypnic headache (disease)
+
+================================================================
+
+SELURUH KUERI (n=30)
+  Sistem                                 DA    P@5    MRR
+  Baseline kata kunci                 0.033  0.060  0.170
+  Baseline embedding                  0.100  0.173  0.306
+  Sistem utama (dengan simulasi)      0.600  0.487  0.687
+  Sistem utama, DA tanpa simulasi     0.433
+
+ACRONYM (n=10)
+  Sistem                                 DA    P@5    MRR
+  Baseline kata kunci                 0.100  0.060  0.251
+  Baseline embedding                  0.000  0.240  0.324
+  Sistem utama (dengan simulasi)      0.600  0.520  0.650
+  Sistem utama, DA tanpa simulasi     0.600
+
+POLYSEMY (n=10)
+  Sistem                                 DA    P@5    MRR
+  Baseline kata kunci                 0.000  0.020  0.067
+  Baseline embedding                  0.300  0.140  0.425
+  Sistem utama (dengan simulasi)      0.400  0.460  0.511
+  Sistem utama, DA tanpa simulasi     0.400
+
+SPECIFICITY_GAP (n=10)
+  Sistem                                 DA    P@5    MRR
+  Baseline kata kunci                 0.000  0.100  0.193
+  Baseline embedding                  0.000  0.140  0.169
+  Sistem utama (dengan simulasi)      0.800  0.480  0.900
+  Sistem utama, DA tanpa simulasi     0.300
+
+METRIK PENDUKUNG BASELINE EMBEDDING
+  DA jika interpretasi = node awal teratas : 0.100
+  Konsep acuan ada di 5 node awal          : 0.333
+  Rata-rata waktu (s)                      : 2.02
+
+UJI SIGNIFIKANSI: sistem utama vs baseline embedding (n = 30, alpha = 0,05)
+  P5   paired t: t(29) = 4.195, p = 0.000235 | randomization: selisih = +0.313, p = 0.000330
+  RR   paired t: t(29) = 4.198, p = 0.000233 | randomization: selisih = +0.381, p = 0.000270
+  DA dengan simulasi   McNemar eksak: b = 0, c = 15, p = 0.000061
+  DA tanpa simulasi    McNemar eksak: b = 0, c = 10, p = 0.001953
+
+File: reports\baseline_embedding/items.csv, details.json, summary.txt

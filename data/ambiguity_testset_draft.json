@@ -1,0 +1,1274 @@
+[
+  {
+    "query_id": "A01",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "MS",
+    "query": "Which drugs are used for MS in a young woman with optic neuritis and relapsing episodes of limb numbness?",
+    "context": "",
+    "gold": [
+      {
+        "name": "multiple sclerosis",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Mitral stenosis",
+        "label": "Phenotype"
+      },
+      {
+        "name": "metabolic syndrome",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Optic neuritis and relapsing sensory symptoms in a young woman are typical of multiple sclerosis.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Multiple Sclerosis",
+    "derived_from": null,
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Multiple Sclerosis - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK499849",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK499849/"
+    },
+    "relevant_relations": [
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri menanyakan obat, sehingga node relevan adalah konsep acuan beserta obat yang berelasi indication dengannya.",
+    "rationale_id": "Neuritis optik dan gejala sensorik yang kambuh-kambuhan pada perempuan muda khas untuk multiple sclerosis.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A02",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "MS",
+    "query": "MS in a patient with a history of rheumatic fever who has a low-pitched diastolic rumble at the apex and an opening snap.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Mitral stenosis",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "multiple sclerosis",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Rheumatic fever is the leading cause of mitral stenosis; an opening snap followed by an apical diastolic rumble is its classic auscultatory finding.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Mitral Stenosis",
+    "derived_from": "ground_truth_dataset.json: 'What symptoms and physical findings characterize mitral stenosis?'",
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Mitral Stenosis - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK430742",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK430742/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Demam rematik merupakan penyebab utama stenosis mitral; opening snap yang diikuti bising diastolik di apeks adalah temuan auskultasi klasiknya.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A03",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "MI",
+    "query": "MI in a 60-year-old smoker with crushing chest pain radiating to the left arm, sweating, and ST elevation on ECG.",
+    "context": "",
+    "gold": [
+      {
+        "name": "myocardial infarction (disease)",
+        "label": "Disease"
+      },
+      {
+        "name": "myocardial infarction",
+        "label": "Disease"
+      },
+      {
+        "name": "ST-elevation myocardial infarction",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Mitral regurgitation",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Crushing chest pain radiating to the arm with ST elevation indicates acute myocardial infarction.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - ST-Segment Elevation Myocardial Infarction",
+    "derived_from": "ground_truth_dataset.json: 'What is myocardial infarction?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Acute Myocardial Infarction - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK459269",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459269/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Nyeri dada seperti ditekan yang menjalar ke lengan disertai elevasi segmen ST menunjukkan infark miokard akut.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A04",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "MI",
+    "query": "MI heard as a holosystolic murmur at the apex radiating to the axilla.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Mitral regurgitation",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "myocardial infarction (disease)",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "In valvular contexts MI stands for mitral insufficiency (regurgitation), whose murmur is apical, holosystolic and radiates to the axilla.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Mitral Regurgitation",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Mitral Regurgitation - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK553135",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK553135/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Dalam konteks katup jantung, MI berarti mitral insufficiency (regurgitasi mitral), dengan bising holosistolik di apeks yang menjalar ke aksila.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A05",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "AD",
+    "query": "What medications are available for AD in an elderly patient with progressive memory loss and difficulty finding words?",
+    "context": "",
+    "gold": [
+      {
+        "name": "Alzheimer disease",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "atopic eczema",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Progressive memory loss and word-finding difficulty in an elderly patient indicate Alzheimer disease, not atopic dermatitis.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Alzheimer's Disease",
+    "derived_from": "ground_truth_dataset.json: 'Which drugs are indicated for the treatment of Alzheimer disease?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Alzheimer Disease - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK499922",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK499922/"
+    },
+    "relevant_relations": [
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri menanyakan obat, sehingga node relevan adalah konsep acuan beserta obat yang berelasi indication dengannya.",
+    "rationale_id": "Penurunan daya ingat yang progresif dan kesulitan menemukan kata pada lansia menunjukkan penyakit Alzheimer, bukan dermatitis atopik.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A06",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "MSA",
+    "query": "MSA in a 54-year-old man with parkinsonism, orthostatic hypotension, and urinary incontinence.",
+    "context": "",
+    "gold": [
+      {
+        "name": "multiple system atrophy",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "staphylococcal infection",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Parkinsonism with prominent autonomic failure (orthostatic hypotension, urinary incontinence) is characteristic of multiple system atrophy rather than methicillin-sensitive Staphylococcus aureus infection.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Multiple System Atrophy",
+    "derived_from": "ground_truth_dataset.json: MedQA item with answer 'Multiple system atrophy'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Shy-Drager Syndrome (Multiple System Atrophy) - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK560502",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK560502/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Parkinsonisme dengan gangguan otonom yang menonjol (hipotensi ortostatik, inkontinensia urine) khas untuk multiple system atrophy, bukan infeksi Staphylococcus aureus sensitif metisilin (MSSA).",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A07",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "ALS",
+    "query": "ALS in a patient with progressive asymmetric limb weakness, muscle fasciculations, and brisk reflexes.",
+    "context": "",
+    "gold": [
+      {
+        "name": "amyotrophic lateral sclerosis",
+        "label": "Disease"
+      },
+      {
+        "name": "Amyotrophic lateral sclerosis",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [],
+    "general_term": null,
+    "rationale": "Combined lower motor neuron signs (weakness, fasciculations) and upper motor neuron signs (brisk reflexes) indicate amyotrophic lateral sclerosis rather than advanced life support.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Amyotrophic Lateral Sclerosis and Other Motor Neuron Diseases",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Amyotrophic Lateral Sclerosis - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK556151",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK556151/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Kombinasi tanda lower motor neuron (kelemahan, fasikulasi) dan upper motor neuron (refleks meningkat) menunjukkan amyotrophic lateral sclerosis, bukan advanced life support.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A08",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "PDA",
+    "query": "PDA in a premature infant with a continuous machine-like murmur and bounding pulses.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Patent ductus arteriosus",
+        "label": "Phenotype"
+      },
+      {
+        "name": "patent ductus arteriosus",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [],
+    "general_term": null,
+    "rationale": "A continuous machine-like murmur with bounding pulses in a premature infant is the classic presentation of patent ductus arteriosus, not the posterior descending artery.",
+    "source": "Nelson Textbook of Pediatrics, 21st ed. - Patent Ductus Arteriosus",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Patent Ductus Arteriosus - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK430758",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK430758/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Bising kontinu seperti mesin dengan nadi kuat (bounding) pada bayi prematur adalah gambaran klasik patent ductus arteriosus, bukan posterior descending artery.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A09",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "AML",
+    "query": "AML in an adult with fatigue, bleeding gums, pancytopenia, and Auer rods on the blood smear.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Acute myeloid leukemia",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [],
+    "general_term": null,
+    "rationale": "Auer rods in blasts with pancytopenia are characteristic of acute myeloid leukemia, not the anterior mitral leaflet.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Acute Myeloid Leukemia",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Acute Myeloid Leukemia - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK507875",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK507875/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Batang Auer pada sel blas disertai pansitopenia khas untuk leukemia mieloid akut, bukan anterior mitral leaflet.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "A10",
+    "ambiguity_type": "acronym",
+    "ambiguous_term": "RA",
+    "query": "RA in a woman with symmetric swelling of the small joints of both hands and morning stiffness lasting more than an hour.",
+    "context": "",
+    "gold": [
+      {
+        "name": "rheumatoid arthritis",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Right atrial enlargement",
+        "label": "Phenotype"
+      },
+      {
+        "name": "reactive arthritis",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Symmetric small-joint polyarthritis with prolonged morning stiffness is typical of rheumatoid arthritis.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Rheumatoid Arthritis",
+    "derived_from": null,
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Rheumatoid Arthritis - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK441999",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK441999/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Poliartritis simetris pada sendi-sendi kecil dengan kaku pagi yang lama khas untuk artritis reumatoid.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P01",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "depression",
+    "query": "A patient on high-dose morphine develops depression with slow, shallow breathing and drowsiness.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Respiratory failure",
+        "label": "Phenotype"
+      },
+      {
+        "name": "Respiratory insufficiency",
+        "label": "Phenotype"
+      },
+      {
+        "name": "Hypoventilation",
+        "label": "Phenotype"
+      },
+      {
+        "name": "Respiratory arrest",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "major depressive disorder",
+        "label": "Disease"
+      },
+      {
+        "name": "ST segment depression",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Opioids cause respiratory depression; slow shallow breathing after morphine indicates respiratory depression. PrimeKG has no 'respiratory depression' node, so the nearest respiratory phenotypes are accepted.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Opioid-Related Disorders",
+    "derived_from": "Example from the supervisor's project guide (respiratory depression after morphine)",
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Opioid Toxicity - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK470415",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470415/"
+    },
+    "relevant_relations": [
+      "drug_effect"
+    ],
+    "relevant_relations_reason": "Kueri membahas efek obat (morfin), sehingga node relevan adalah konsep acuan beserta obat yang berelasi drug_effect dengannya.",
+    "rationale_id": "Opioid menyebabkan depresi napas; napas lambat dan dangkal setelah morfin menunjukkan depresi napas. PrimeKG tidak memiliki node \"respiratory depression\", sehingga fenotipe pernapasan terdekat diterima sebagai jawaban.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P02",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "depression",
+    "query": "Depression with persistently low mood, loss of interest in activities, and early-morning awakening for the past two months.",
+    "context": "",
+    "gold": [
+      {
+        "name": "major depressive disorder",
+        "label": "Disease"
+      },
+      {
+        "name": "unipolar depression",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "ST segment depression",
+        "label": "Phenotype"
+      },
+      {
+        "name": "Respiratory failure",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Persistent low mood and anhedonia for at least two weeks meet the core criteria of a major depressive episode.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Mental Disorders (Depressive Disorders)",
+    "derived_from": null,
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Major Depressive Disorder - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK559078",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559078/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Suasana hati murung yang menetap dan hilangnya minat selama sedikitnya dua minggu memenuhi kriteria inti episode depresi mayor.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P03",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "depression",
+    "query": "The ECG shows horizontal depression in leads V4 to V6 during an episode of exertional chest pain.",
+    "context": "",
+    "gold": [
+      {
+        "name": "ST segment depression",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "major depressive disorder",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Horizontal depression in ECG leads during exertional chest pain refers to ST-segment depression, a sign of myocardial ischemia.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Electrocardiography",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "ST Segment - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK459364",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459364/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Depresi horizontal pada sadapan EKG saat nyeri dada akibat aktivitas mengacu pada depresi segmen ST, tanda iskemia miokard.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P04",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "cold",
+    "query": "Cold with a runny nose, sneezing, and a mild sore throat for three days.",
+    "context": "",
+    "gold": [
+      {
+        "name": "common cold",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Hypothermia",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Rhinorrhea, sneezing and mild sore throat describe the common cold (viral upper respiratory infection), not a temperature sensation.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Common Viral Respiratory Infections",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Upper Respiratory Tract Infections With Focus on The Common Cold - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK532961",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK532961/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Pilek, bersin, dan nyeri tenggorokan ringan menggambarkan common cold (infeksi virus saluran napas atas), bukan sensasi suhu dingin.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P05",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "cold",
+    "query": "Cold in an elderly man found outdoors on a winter night, shivering and confused, with a core body temperature of 33 degrees Celsius.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Hypothermia",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "common cold",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Cold exposure with shivering, confusion and a core temperature below 35 degrees Celsius defines hypothermia, not a viral infection.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Hypothermia and Peripheral Cold Injuries",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Hypothermia - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK545239",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK545239/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Paparan dingin dengan menggigil, kebingungan, dan suhu inti di bawah 35 °C merupakan definisi hipotermia, bukan infeksi virus.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P06",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "diabetes",
+    "query": "Diabetes after a head injury with large volumes of dilute urine and intense thirst, while blood glucose remains normal.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Diabetes insipidus",
+        "label": "Phenotype"
+      },
+      {
+        "name": "neurohypophyseal diabetes insipidus",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "type 1 diabetes mellitus",
+        "label": "Disease"
+      },
+      {
+        "name": "type 2 diabetes mellitus",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Polyuria of dilute urine with normal glucose after head trauma indicates central (neurohypophyseal) diabetes insipidus, not diabetes mellitus.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Disorders of the Neurohypophysis",
+    "derived_from": null,
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Arginine Vasopressin Disorder (Diabetes Insipidus) - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK470458",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470458/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Poliuria dengan urine encer dan kadar glukosa normal setelah cedera kepala menunjukkan diabetes insipidus sentral (neurohipofisis), bukan diabetes melitus.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P07",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "shock",
+    "query": "Shock minutes after a bee sting, with hives, wheezing, and a sudden drop in blood pressure.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Anaphylactic shock",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Hypovolemic shock",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Rapid hypotension with urticaria and bronchospasm after an insect sting is anaphylactic shock.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Anaphylaxis",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Anaphylaxis - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK482124",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482124/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Hipotensi mendadak disertai urtikaria dan bronkospasme setelah sengatan serangga adalah syok anafilaktik.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P08",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "shock",
+    "query": "Shock in a child after two days of profuse watery diarrhea and vomiting, with dry mucous membranes and sunken eyes.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Hypovolemic shock",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Anaphylactic shock",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Severe fluid loss from diarrhea and vomiting with signs of dehydration leads to hypovolemic shock.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Approach to the Patient with Shock",
+    "derived_from": "ground_truth_dataset.json: 'How does cholera toxin produce the clinical picture of cholera?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Hypovolemia and Hypovolemic Shock - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK513297",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513297/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Kehilangan cairan berat akibat diare dan muntah dengan tanda dehidrasi menyebabkan syok hipovolemik.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P09",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "infarction",
+    "query": "Infarction causing sudden weakness of the right arm and leg with slurred speech.",
+    "context": "",
+    "gold": [
+      {
+        "name": "cerebral infarction",
+        "label": "Disease"
+      },
+      {
+        "name": "Ischemic stroke",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "myocardial infarction (disease)",
+        "label": "Disease"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Sudden unilateral weakness with dysarthria localizes the infarction to the brain (ischemic stroke), not the heart.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Ischemic Stroke",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Ischemic Stroke - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK499997",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK499997/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Kelemahan satu sisi tubuh yang mendadak disertai bicara pelo menunjukkan infark di otak (stroke iskemik), bukan di jantung.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "P10",
+    "ambiguity_type": "polysemy",
+    "ambiguous_term": "ulcer",
+    "query": "Ulcer with burning upper abdominal pain that improves after eating.",
+    "context": "",
+    "gold": [
+      {
+        "name": "peptic ulcer disease",
+        "label": "Disease"
+      },
+      {
+        "name": "Peptic ulcer",
+        "label": "Phenotype",
+        "added_after_pilot": true,
+        "note": "HPO synonym of the MONDO concept; added after the pilot run, to be confirmed by the supervisor"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "Pressure ulcer",
+        "label": "Phenotype"
+      },
+      {
+        "name": "Skin ulcer",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": null,
+    "rationale": "Burning epigastric pain relieved by food is typical of peptic (duodenal) ulcer, not a skin or pressure ulcer.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Peptic Ulcer Disease and Related Disorders",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Peptic Ulcer Disease - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK534792",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK534792/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Nyeri ulu hati seperti terbakar yang membaik setelah makan khas untuk ulkus peptikum (duodenum), bukan ulkus kulit atau ulkus dekubitus.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S01",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "heart disease",
+    "query": "Heart disease in an older patient with ankle swelling, breathlessness when lying flat, and waking up at night short of breath.",
+    "context": "",
+    "gold": [
+      {
+        "name": "heart failure",
+        "label": "Disease"
+      },
+      {
+        "name": "congestive heart failure",
+        "label": "Disease"
+      },
+      {
+        "name": "Congestive heart failure",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "coronary artery disease",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "heart disease",
+    "rationale": "Peripheral edema, orthopnea and paroxysmal nocturnal dyspnea are cardinal features of congestive heart failure.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Heart Failure: Pathophysiology and Diagnosis",
+    "derived_from": "ground_truth_dataset.json: 'What is congestive heart failure?'",
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Heart Failure (Congestive Heart Failure) - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK430873",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK430873/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Edema perifer, ortopnea, dan sesak napas nokturnal paroksismal merupakan gambaran utama gagal jantung kongestif.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S02",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "heart disease",
+    "query": "Heart disease in a smoker with high cholesterol who gets chest tightness when climbing stairs that goes away with rest.",
+    "context": "",
+    "gold": [
+      {
+        "name": "coronary artery disease",
+        "label": "Disease"
+      },
+      {
+        "name": "Angina pectoris",
+        "label": "Phenotype"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "heart failure",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "heart disease",
+    "rationale": "Exertional chest discomfort relieved by rest in a patient with risk factors is stable angina due to coronary artery disease.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Stable Ischemic Heart Disease",
+    "derived_from": "ground_truth_dataset.json: 'What is coronary artery disease?'",
+    "seen_in_development": true,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Stable Angina - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK559016",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559016/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Rasa tidak nyaman di dada saat beraktivitas yang hilang dengan istirahat pada pasien dengan faktor risiko adalah angina stabil akibat penyakit jantung koroner.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S03",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "kidney disease",
+    "query": "Kidney disease with frothy urine, generalized swelling, and very low serum albumin.",
+    "context": "",
+    "gold": [
+      {
+        "name": "nephrotic syndrome",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "polycystic kidney disease",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "kidney disease",
+    "rationale": "Heavy proteinuria (frothy urine), edema and hypoalbuminemia define nephrotic syndrome.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Glomerular Diseases",
+    "derived_from": "ground_truth_dataset.json: 'What are the clinical features of nephrotic syndrome?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Nephrotic Syndrome - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK470444",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470444/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Proteinuria berat (urine berbusa), edema, dan hipoalbuminemia merupakan definisi sindrom nefrotik.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S04",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "anemia",
+    "query": "Anemia in a woman with heavy menstrual periods, fatigue, and spoon-shaped nails.",
+    "context": "",
+    "gold": [
+      {
+        "name": "iron deficiency anemia",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "autoimmune hemolytic anemia",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "anemia",
+    "rationale": "Chronic menstrual blood loss with koilonychia indicates iron deficiency anemia.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Iron Deficiency and Other Hypoproliferative Anemias",
+    "derived_from": "ground_truth_dataset.json: 'Which genes are associated with iron deficiency anemia?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Iron Deficiency and Microcytic Hypochromic Anemia - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK560876",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK560876/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Kehilangan darah menstruasi yang kronis disertai koilonikia (kuku sendok) menunjukkan anemia defisiensi besi.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S05",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "anemia",
+    "query": "Anemia with yellow eyes, dark urine, an enlarged spleen, and a positive direct Coombs test.",
+    "context": "",
+    "gold": [
+      {
+        "name": "autoimmune hemolytic anemia",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "iron deficiency anemia",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "anemia",
+    "rationale": "Hemolysis (jaundice, dark urine, splenomegaly) with a positive direct antiglobulin test indicates autoimmune hemolytic anemia.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Hemolytic Anemias",
+    "derived_from": "ground_truth_dataset.json: MedQA item with answer 'Autoimmune hemolytic anemia'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Laboratory Evaluation of Immune Hemolytic Anemias - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK606096",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK606096/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Tanda hemolisis (ikterus, urine gelap, splenomegali) dengan tes antiglobulin direk (Coombs) positif menunjukkan anemia hemolitik autoimun.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S06",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "arthritis",
+    "query": "Arthritis with sudden severe pain, redness, and swelling of the big toe during the night after heavy drinking.",
+    "context": "",
+    "gold": [
+      {
+        "name": "gout",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "rheumatoid arthritis",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "arthritis",
+    "rationale": "Acute monoarthritis of the first metatarsophalangeal joint triggered by alcohol is classic gout (podagra).",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Gout and Other Crystal-Associated Arthropathies",
+    "derived_from": "ground_truth_dataset.json: MedQA item on chronic therapy of gout",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Gout - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK546606",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK546606/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Monoartritis akut pada sendi metatarsofalangeal pertama yang dipicu alkohol adalah gout klasik (podagra).",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S07",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "lung disease",
+    "query": "Lung disease in a long-term smoker with a chronic productive cough and slowly worsening breathlessness.",
+    "context": "",
+    "gold": [
+      {
+        "name": "chronic obstructive pulmonary disease",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "idiopathic pulmonary fibrosis",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "lung disease",
+    "rationale": "Chronic productive cough and progressive dyspnea in a long-term smoker indicate COPD.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Chronic Obstructive Pulmonary Disease",
+    "derived_from": "ground_truth_dataset.json: 'What medications are used to treat chronic obstructive pulmonary disease?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Chronic Obstructive Pulmonary Disease (COPD) - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK559281",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559281/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Batuk berdahak kronis dan sesak yang makin berat pada perokok lama menunjukkan PPOK.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S08",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "liver disease",
+    "query": "Liver disease in a young adult with a hand tremor, personality changes, and brownish rings around the iris.",
+    "context": "",
+    "gold": [
+      {
+        "name": "Wilson disease",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "viral hepatitis",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "liver disease",
+    "rationale": "Liver disease with neuropsychiatric signs and Kayser-Fleischer rings in a young adult indicates Wilson disease.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Wilson's Disease",
+    "derived_from": "ground_truth_dataset.json: MedQA item with answer 'Wilson disease'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Wilson Disease - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK441990",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK441990/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Penyakit hati dengan gejala neuropsikiatri dan cincin Kayser-Fleischer pada dewasa muda menunjukkan penyakit Wilson.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S09",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "cancer",
+    "query": "Cancer in a woman who found a painless hard lump with skin dimpling and nipple retraction.",
+    "context": "",
+    "gold": [
+      {
+        "name": "breast cancer",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "hepatocellular carcinoma",
+        "label": "Disease"
+      }
+    ],
+    "general_term": "cancer",
+    "rationale": "A painless hard lump with skin dimpling and nipple retraction is a typical presentation of breast cancer.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Breast Cancer",
+    "derived_from": "ground_truth_dataset.json: 'What medications are used to treat breast cancer?'",
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Breast Cancer - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK482286",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482286/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Benjolan keras tidak nyeri dengan kulit berlekuk dan puting tertarik ke dalam merupakan gambaran khas kanker payudara.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  },
+  {
+    "query_id": "S10",
+    "ambiguity_type": "specificity_gap",
+    "ambiguous_term": "headache",
+    "query": "Headache on one side, throbbing, with nausea and sensitivity to light, preceded by flashing zigzag lines in the vision.",
+    "context": "",
+    "gold": [
+      {
+        "name": "migraine disorder",
+        "label": "Disease"
+      },
+      {
+        "name": "Migraine",
+        "label": "Phenotype"
+      },
+      {
+        "name": "migraine with aura",
+        "label": "Disease"
+      }
+    ],
+    "distractors": [
+      {
+        "name": "cluster headache",
+        "label": "Phenotype"
+      }
+    ],
+    "general_term": "headache",
+    "rationale": "Unilateral throbbing headache with nausea and photophobia preceded by a visual aura is migraine with aura.",
+    "source": "Harrison's Principles of Internal Medicine, 20th ed. - Migraine and Other Primary Headache Disorders",
+    "derived_from": null,
+    "seen_in_development": false,
+    "verified": true,
+    "verified_by": "Yuda Munarko, S.Kom., M.Sc. (dosen pembimbing)",
+    "source_online": {
+      "title": "Migraine With Aura - StatPearls",
+      "publisher": "StatPearls Publishing, NCBI Bookshelf",
+      "nbk": "NBK554611",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK554611/"
+    },
+    "relevant_relations": [
+      "disease_phenotype_positive",
+      "indication"
+    ],
+    "relevant_relations_reason": "Kueri mendeskripsikan gejala/temuan klinis untuk mengenali suatu kondisi, sehingga informasi relevan adalah konsep acuan beserta node yang berelasi penyakit-fenotipe dan indikasi dengannya (mengikuti Tabel 3.2).",
+    "rationale_id": "Sakit kepala sebelah yang berdenyut disertai mual dan fotofobia, didahului aura visual, adalah migren dengan aura.",
+    "verified_date": "2026-10-30",
+    "verification_decision": "Sesuai"
+  }
+]
